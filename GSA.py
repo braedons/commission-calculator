@@ -10,15 +10,20 @@ REPLACEMENT_PLAN_RATE = .1
 class PersonalStats:
 	def __init__(self):
 		self.bucket_totals = [0,0,0]
+		self.replacement_plan_total = 0
+		self.out_of_dept_total = 0
 		self.seen_custs = set()
 	
 	def clear(self):
 		self.__init__()
 
 	def calculate_commission(self):
-		return sum([total*rate for total, rate in zip(stats.bucket_totals, COMMISSION_RATES)]) \
-				+ stats.out_of_dept_total*OUT_OF_DEPT_RATE \
-				+ stats.replacement_plan_total*REPLACEMENT_PLAN_RATE
+		commission = sum([total*rate for total, rate in zip(self.bucket_totals, COMMISSION_RATES)]) \
+				+ self.out_of_dept_total*OUT_OF_DEPT_RATE \
+				+ self.replacement_plan_total*REPLACEMENT_PLAN_RATE
+		sales_total = sum(self.bucket_totals) + self.out_of_dept_total + self.replacement_plan_total
+
+		return commission, sales_total
 
 def get_commission_bucket(unit_price):
 	if unit_price < 0: raise ValueError('UNIT PRICE MUST BE NON-NEGATIVE')
@@ -47,10 +52,10 @@ def calc_commission(table, deductions_ents, stats):
 	# Calculate commissions, 3 buckets
 	# item = [Transaction Number, Sale Type, Line, Sku, Description, Qty, Unit Price, Total]
 	for item in table:
-		unit_price, total = float(item[-2][1:]), float(item[-1][1:])
-
 		# Format differs for sale and exchange transactions
 		if item[1] == 'sale':
+			unit_price, total = float(item[-2][1:]), float(item[-1][1:])
+
 			# Replacement plans have different rates
 			if 'year replacement plan' in item[4]:
 				stats.replacement_plan_total += total
@@ -73,9 +78,9 @@ def calc_commission(table, deductions_ents, stats):
 			stats.out_of_dept_total += curr
 	
 	# Multiplies corresponding rates and bucket_totals
-	total_commission = stats.calculate_total()
+	total_commission, sales_total = stats.calculate_commission()
 
-	return total_commission
+	return total_commission, sales_total
 
 def count_customers(table, stats):
 	for transaction in table:
@@ -83,19 +88,20 @@ def count_customers(table, stats):
 	
 	return len(stats.seen_custs)
 
-def update_commission(text_in, deductions_ents, commission_lbl, cust_lbl, stats):
+def update_results(text_in, deductions_ents, results_lbls, stats):
 	table = parse_table(text_in)
-	commission = calc_commission(table, deductions_ents, stats)
+	commission, sales_total = calc_commission(table, deductions_ents, stats)
 	n_custs = count_customers(table, stats)
 
-	commission_lbl['text'] = 'Total Commission: $' + str(round(commission, 2))
-	cust_lbl['text'] = 'Customers Helped: ' + str(n_custs)
+	results_lbls['commission_lbl']['text'] = 'Total Commission: $' + str(round(commission, 2))
+	results_lbls['cust_lbl']['text'] = 'Customers Helped: ' + str(n_custs)
+	results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
+	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + str(round(commission / sales_total, 4) * 100) + '%'
 
-def clear(transactions_txt, deductions_ents, commission_lbl, cust_lbl, stats):
+def clear(transactions_txt, deductions_ents, results_lbls, stats):
 	transactions_txt.delete('1.0', 'end')
 	for ent in deductions_ents: ent.delete(0, 'end')
-	commission_lbl['text'] = ''
-	cust_lbl['text'] = ''
+	for lbl in results_lbls.values(): lbl['text'] = ''
 
 	stats.clear()
 
@@ -121,15 +127,23 @@ if __name__ == '__main__':
 
 		deductions_ents[i] = ent
 
-	commission_lbl = tk.Label()
-	cust_lbl = tk.Label()
+	# Build results section
+	results_frame = tk.Frame()
+	results_lbls = {}
+
+	results_lbls['commission_lbl'] = tk.Label(master=results_frame)
+	results_lbls['cust_lbl'] = tk.Label(master=results_frame)
+	results_lbls['sales_lbl'] = tk.Label(master=results_frame)
+	results_lbls['overall_rate_lbl'] = tk.Label(master=results_frame)
+
+	for lbl in results_lbls.values(): lbl.pack()
 
 	# Results should be saved and added together between process clicks until cleared
 	bucket_totals = [0,0,0]
 	
 	btn_frame = tk.Frame(master=window)
-	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_commission(transactions_txt, deductions_ents, commission_lbl, cust_lbl, stats))
-	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, commission_lbl, cust_lbl, stats))
+	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_results(transactions_txt, deductions_ents, results_lbls, stats))
+	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, results_lbls, stats))
 
 	proc_btn.pack(side=tk.LEFT)
 	clear_btn.pack(side=tk.LEFT)
@@ -141,8 +155,7 @@ if __name__ == '__main__':
 	deductions_frame.pack()
 
 	btn_frame.pack()
-	commission_lbl.pack()
-	cust_lbl.pack()
+	results_frame.pack()
 
 	# Start running app
 	window.mainloop()
