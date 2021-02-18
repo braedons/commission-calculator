@@ -15,6 +15,11 @@ class PersonalStats:
 	def clear(self):
 		self.__init__()
 
+	def calculate_commission(self):
+		return sum([total*rate for total, rate in zip(stats.bucket_totals, COMMISSION_RATES)]) \
+				+ stats.out_of_dept_total*OUT_OF_DEPT_RATE \
+				+ stats.replacement_plan_total*REPLACEMENT_PLAN_RATE
+
 def get_commission_bucket(unit_price):
 	if unit_price < 0: raise ValueError('UNIT PRICE MUST BE NON-NEGATIVE')
 
@@ -42,28 +47,33 @@ def calc_commission(table, deductions_ents, stats):
 	# Calculate commissions, 3 buckets
 	# item = [Transaction Number, Sale Type, Line, Sku, Description, Qty, Unit Price, Total]
 	for item in table:
+		unit_price, total = float(item[-2][1:]), float(item[-1][1:])
+
 		# Format differs for sale and exchange transactions
 		if item[1] == 'sale':
-			unit_price, total = float(item[-2][1:]), float(item[-1][1:])
-			bucket_index = get_commission_bucket(unit_price)
-			stats.bucket_totals[bucket_index] += total # TODO: does (total == qty*unit_price)?
+			# Replacement plans have different rates
+			if 'year replacement plan' in item[4]:
+				stats.replacement_plan_total += total
+			else:
+				bucket_index = get_commission_bucket(unit_price)
+				stats.bucket_totals[bucket_index] += total # TODO: does (total == qty*unit_price)?
 		elif item[1] == 'exchange':
+			# TODO: exchange and replacement?
 			total = float(item[-1][2:-1]) # TODO: verify total is ok, qty doesn't matter
 			bucket_index = get_commission_bucket(total)
 			stats.bucket_totals[bucket_index] += total
 	
 	# Remove specified deductions
-	out_of_dept_total = 0
 	for i in range(len(stats.bucket_totals)):
 		# TODO: what about negatives?
 		# TODO: handle malformed input
 		if deductions_ents[i].get():
 			curr = float(deductions_ents[i].get())
 			stats.bucket_totals[i] -= curr
-			out_of_dept_total += curr
+			stats.out_of_dept_total += curr
 	
 	# Multiplies corresponding rates and bucket_totals
-	total_commission = sum([total*rate for total, rate in zip(stats.bucket_totals, COMMISSION_RATES)]) + out_of_dept_total*OUT_OF_DEPT_RATE
+	total_commission = stats.calculate_total()
 
 	return total_commission
 
