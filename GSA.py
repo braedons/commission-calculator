@@ -51,7 +51,7 @@ def parse_table(text_in):
 def is_service_plan(description):
 	split = description.split()
 
-	return split[0].isdigit() and description[1] == 'year' and description[-1] == 'plan'
+	return split[0].isdigit() and split[1] == 'year' and split[-1] == 'plan'
 
 def calc_commission(table, deductions_ents, stats):
 	# Calculate commissions, 3 buckets
