@@ -4,13 +4,13 @@ from math import inf
 COMMISSION_RATES = (.06, .03, .015)
 COMMISSION_RANGES = ((0, 9.99), (10, 99.99), (100, inf))
 OUT_OF_DEPT_RATE = .01
-REPLACEMENT_PLAN_RATE = .1
+SERVICE_PLAN_RATE = .1
 
 
 class PersonalStats:
 	def __init__(self):
 		self.bucket_totals = [0,0,0]
-		self.replacement_plan_total = 0
+		self.service_plan_total = 0
 		self.out_of_dept_total = 0
 		self.seen_custs = set()
 	
@@ -20,8 +20,8 @@ class PersonalStats:
 	def calculate_commission(self):
 		commission = sum([total*rate for total, rate in zip(self.bucket_totals, COMMISSION_RATES)]) \
 				+ self.out_of_dept_total*OUT_OF_DEPT_RATE \
-				+ self.replacement_plan_total*REPLACEMENT_PLAN_RATE
-		sales_total = sum(self.bucket_totals) + self.out_of_dept_total + self.replacement_plan_total
+				+ self.service_plan_total*SERVICE_PLAN_RATE
+		sales_total = sum(self.bucket_totals) + self.out_of_dept_total + self.service_plan_total
 
 		return commission, sales_total
 
@@ -48,6 +48,11 @@ def parse_table(text_in):
 	table = [line for line in table if len(line) == 8]
 	return table
 
+def is_service_plan(description):
+	split = description.split()
+
+	return split[0].isdigit() and description[1] == 'year' and description[-1] == 'plan'
+
 def calc_commission(table, deductions_ents, stats):
 	# Calculate commissions, 3 buckets
 	# item = [Transaction Number, Sale Type, Line, Sku, Description, Qty, Unit Price, Total]
@@ -56,14 +61,14 @@ def calc_commission(table, deductions_ents, stats):
 		if item[1] == 'sale':
 			unit_price, total = float(item[-2][1:]), float(item[-1][1:])
 
-			# Replacement plans have different rates
-			if 'year replacement plan' in item[4]:
-				stats.replacement_plan_total += total
+			# Service plans have different rates
+			if is_service_plan(item[4]):
+				stats.service_plan_total += total
 			else:
 				bucket_index = get_commission_bucket(unit_price)
 				stats.bucket_totals[bucket_index] += total # TODO: does (total == qty*unit_price)?
 		elif item[1] == 'exchange':
-			# TODO: exchange and replacement?
+			# TODO: exchange and service?
 			total = float(item[-1][2:-1]) # TODO: verify total is ok, qty doesn't matter
 			bucket_index = get_commission_bucket(total)
 			stats.bucket_totals[bucket_index] += total
@@ -114,7 +119,7 @@ if __name__ == '__main__':
 	transactions_txt = tk.Text()
 
 	deductions_frame = tk.Frame(master=window)
-	tk.Label(text='Enter the amount to deduct from each range', master=deductions_frame).pack()
+	tk.Label(text='Enter the amount of out of department sales to deduct from each range', master=deductions_frame).pack()
 	deductions_ents = [None] * 3
 	for i in range(3):
 		curr = tk.Frame(master=deductions_frame)
