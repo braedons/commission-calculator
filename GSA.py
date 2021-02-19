@@ -9,16 +9,19 @@ SERVICE_PLAN_RATE = .1
 
 class PersonalStats:
 	def __init__(self):
-		self.bucket_totals = [0,0,0]
+		self.bucket_totals = [0] * len(COMMISSION_RATES)
 		self.service_plan_total = 0
 		self.out_of_dept_total = 0
 		self.seen_custs = set()
+		self.deductions = [0] * len(COMMISSION_RATES)
+		self.prev_table = None
 	
 	def clear(self):
 		self.__init__()
 
 	def calculate_commission(self):
-		commission = sum([total*rate for total, rate in zip(self.bucket_totals, COMMISSION_RATES)]) \
+		bucket_totals = [total - deduction for total, deduction in zip(self.bucket_totals, self.deductions)]
+		commission = sum([total*rate for total, rate in zip(bucket_totals, COMMISSION_RATES)]) \
 				+ self.out_of_dept_total*OUT_OF_DEPT_RATE \
 				+ self.service_plan_total*SERVICE_PLAN_RATE
 		sales_total = sum(self.bucket_totals) + self.out_of_dept_total + self.service_plan_total
@@ -54,33 +57,39 @@ def is_service_plan(description):
 	return split[0].isdigit() and split[1] == 'year' and split[-1] == 'plan'
 
 def calc_commission(table, deductions_ents, stats):
-	# Calculate commissions, 3 buckets
-	# item = [Transaction Number, Sale Type, Line, Sku, Description, Qty, Unit Price, Total]
-	for item in table:
-		# Format differs for sale and exchange transactions
-		if item[1] == 'sale':
-			unit_price, total = float(item[-2][1:]), float(item[-1][1:])
+	if table != stats.prev_table:
+		# Calculate commissions, 3 buckets
+		# item = [Transaction Number, Sale Type, Line, Sku, Description, Qty, Unit Price, Total]
+		for item in table:
+			# Format differs for sale and exchange transactions
+			if item[1] == 'sale':
+				unit_price, total = float(item[-2][1:]), float(item[-1][1:])
 
-			# Service plans have different rates
-			if is_service_plan(item[4]):
-				stats.service_plan_total += total
-			else:
-				bucket_index = get_commission_bucket(unit_price)
-				stats.bucket_totals[bucket_index] += total # TODO: does (total == qty*unit_price)?
-		elif item[1] == 'exchange':
-			# TODO: exchange and service?
-			total = float(item[-1][2:-1]) # TODO: verify total is ok, qty doesn't matter
-			bucket_index = get_commission_bucket(total)
-			stats.bucket_totals[bucket_index] += total
+				# Service plans have different rates
+				if is_service_plan(item[4]):
+					stats.service_plan_total += total
+				else:
+					bucket_index = get_commission_bucket(unit_price)
+					stats.bucket_totals[bucket_index] += total # TODO: does (total == qty*unit_price)?
+			elif item[1] == 'exchange':
+				# TODO: exchange and service?
+				total = float(item[-1][2:-1]) # TODO: verify total is ok, qty doesn't matter
+				bucket_index = get_commission_bucket(total)
+				stats.bucket_totals[bucket_index] += total
+
+		stats.prev_table = table
 	
-	# Remove specified deductions
+	# Handle specified deductions
+	stats.out_of_dept_total = 0
+
 	for i in range(len(stats.bucket_totals)):
 		# TODO: what about negatives?
 		# TODO: handle malformed input
-		if deductions_ents[i].get():
-			curr = float(deductions_ents[i].get())
-			stats.bucket_totals[i] -= curr
-			stats.out_of_dept_total += curr
+		ent = deductions_ents[i].get()
+		if ent:
+			ent = float(ent)
+			stats.deductions[i] = ent
+			stats.out_of_dept_total += ent
 	
 	# Multiplies corresponding rates and bucket_totals
 	total_commission, sales_total = stats.calculate_commission()
@@ -101,7 +110,7 @@ def update_results(text_in, deductions_ents, results_lbls, stats):
 	results_lbls['commission_lbl']['text'] = 'Total Commission: $' + str(round(commission, 2))
 	results_lbls['cust_lbl']['text'] = 'Customers Helped: ' + str(n_custs)
 	results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
-	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + str(round(commission / sales_total, 4) * 100) + '%'
+	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + str(round(commission / sales_total * 100, 2)) + '%'
 
 def clear(transactions_txt, deductions_ents, results_lbls, stats):
 	transactions_txt.delete('1.0', 'end')
