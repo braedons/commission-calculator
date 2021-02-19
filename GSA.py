@@ -110,7 +110,7 @@ def update_results(text_in, deductions_ents, results_lbls, stats):
 	results_lbls['commission_lbl']['text'] = 'Total Commission: $' + str(round(commission, 2))
 	results_lbls['cust_lbl']['text'] = 'Customers Helped: ' + str(n_custs)
 	results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
-	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + str(round(commission / sales_total * 100, 2)) + '%'
+	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + (str(round(commission / sales_total * 100, 2)) if sales_total else '0') + '%' # Handles divide by 0 error
 
 def clear(transactions_txt, deductions_ents, results_lbls, stats):
 	transactions_txt.delete('1.0', 'end')
