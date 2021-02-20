@@ -1,4 +1,5 @@
 import tkinter as tk
+#import tktable
 from math import inf
 
 COMMISSION_RATES = (.06, .03, .015)
@@ -181,7 +182,19 @@ if __name__ == '__main__':
 	results_lbls['sales_lbl'] = tk.Label(master=results_frame)
 	results_lbls['overall_rate_lbl'] = tk.Label(master=results_frame)
 
-	for lbl in results_lbls.values(): lbl.pack()
+	# Creating results table broken down by bucket
+#	bucket_breakdown_tbl = tktable.Table(master=window, cols=6, rows=4)
+#	bucket_breakdown_cols = ['6% Bracket', '3% Bracket', '1.5% Bracket', 'Out of Dept']
+#	var = tktable.ArrayVar(window)
+
+#	row_cnt, col_cnt = 0,0
+#	for col in bucket_breakdown_cols:
+#		i = f'{row_cnt},{col_cnt}'
+#		var[i] = col
+#		col_cnt += 1
+#	bucket_breakdown_tbl['variable'] = var
+#	
+#	for lbl in results_lbls.values(): lbl.pack()
 
 	# Results should be saved and added together between process clicks until cleared
 	bucket_totals = [0,0,0]
@@ -203,6 +216,7 @@ if __name__ == '__main__':
 
 	btn_frame.pack()
 	results_frame.pack()
+#	bucket_braekdown_tbl.pack()
 
 	# Start running app
 	window.mainloop()
