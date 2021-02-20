@@ -119,6 +119,20 @@ def clear(transactions_txt, deductions_ents, results_lbls, stats):
 
 	stats.clear()
 
+# ----------------------------------------------------------- Event Callbacks
+
+def paste_clipboard(event, window):
+	if event.widget.compare("end-1c", "==", "1.0"):
+		event.widget.delete(1.0, "end")
+		event.widget.insert("end", window.clipboard_get())
+
+def select_all(event):
+	event.widget.tag_add('sel', "1.0", 'end')
+	event.widget.mark_set('insert', "1.0")
+	event.widget.see('insert')
+
+# ----------------------------------------------------------- Main
+
 if __name__ == '__main__':
 	window = tk.Tk()
 	window.title('GSA')
@@ -126,7 +140,10 @@ if __name__ == '__main__':
 	
 	instr = tk.Label(text='Enter the copied transaction records')
 	transactions_txt = tk.Text()
+	transactions_txt.bind('<1>', lambda ev: paste_clipboard(ev, window))
+	transactions_txt.bind('<Control-KeyRelease-a>', select_all)
 
+	# Out of dept deductions section
 	deductions_frame = tk.Frame(master=window)
 	tk.Label(text='Enter the amount of out of department sales to deduct from each range', master=deductions_frame).pack()
 	deductions_ents = [None] * 3
