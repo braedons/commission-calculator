@@ -119,12 +119,26 @@ def clear(transactions_txt, deductions_ents, results_lbls, stats):
 
 	stats.clear()
 
+def paste_page(transactions_txt, window):
+	transactions_txt.delete('1.0', 'end')
+	
+	try:
+		clipboard = window.clipboard_get()
+	except:
+		clipboard = ''
+	transactions_txt.insert('end', clipboard)
+
 # ----------------------------------------------------------- Event Callbacks
 
 def paste_clipboard(event, window):
 	if event.widget.compare("end-1c", "==", "1.0"):
 		event.widget.delete(1.0, "end")
-		event.widget.insert("end", window.clipboard_get())
+
+		try:
+			clipboard = window.clipboard_get()
+		except:
+			clipboard = ''
+		transactions_txt.insert('end', clipboard)
 
 def select_all(event):
 	event.widget.tag_add('sel', "1.0", 'end')
@@ -173,9 +187,11 @@ if __name__ == '__main__':
 	bucket_totals = [0,0,0]
 	
 	btn_frame = tk.Frame(master=window)
+	paste_page_btn = tk.Button(text='Paste New Page', master=btn_frame, command=lambda: paste_page(transactions_txt, window))
 	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_results(transactions_txt, deductions_ents, results_lbls, stats))
 	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, results_lbls, stats))
 
+	paste_page_btn.pack(side=tk.LEFT)
 	proc_btn.pack(side=tk.LEFT)
 	clear_btn.pack(side=tk.LEFT)
 
