@@ -1,5 +1,5 @@
 import tkinter as tk
-#import tktable
+import tktable
 from math import inf
 
 COMMISSION_RATES = (.06, .03, .015)
@@ -20,11 +20,21 @@ class PersonalStats:
 	def clear(self):
 		self.__init__()
 
-	def calculate_commission(self):
+	# ----------------------------------------- Commission calculations
+	def calc_bucket_commissions(self):
 		bucket_totals = [total - deduction for total, deduction in zip(self.bucket_totals, self.deductions)]
-		commission = sum([total*rate for total, rate in zip(bucket_totals, COMMISSION_RATES)]) \
-				+ self.out_of_dept_total*OUT_OF_DEPT_RATE \
-				+ self.service_plan_total*SERVICE_PLAN_RATE
+		return [total*rate for total, rate in zip(bucket_totals, COMMISSION_RATES)]
+
+	def calc_out_of_dept_commission(self):
+		return self.out_of_dept_total * OUT_OF_DEPT_RATE
+
+	def calc_service_plan_commission(self):
+		return self.service_plan_total*SERVICE_PLAN_RATE
+
+	def calculate_commission(self):
+		commission = sum(self.calc_bucket_commissions()) \
+				+ self.calc_out_of_dept_commission() \
+				+ self.calc_service_plan_commission()
 		sales_total = sum(self.bucket_totals) + self.out_of_dept_total + self.service_plan_total
 
 		return commission, sales_total
@@ -103,7 +113,7 @@ def count_customers(table, stats):
 	
 	return len(stats.seen_custs)
 
-def update_results(text_in, deductions_ents, results_lbls, stats):
+def update_results(text_in, deductions_ents, results_lbls, bucket_breakdown_tbl, stats):
 	table = parse_table(text_in)
 	commission, sales_total = calc_commission(table, deductions_ents, stats)
 	n_custs = count_customers(table, stats)
@@ -113,10 +123,32 @@ def update_results(text_in, deductions_ents, results_lbls, stats):
 	results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
 	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + (str(round(commission / sales_total * 100, 2)) if sales_total else '0') + '%' # Handles divide by 0 error
 
-def clear(transactions_txt, deductions_ents, results_lbls, stats):
+	# Update breakdown table
+	# Commission row
+	bucket_breakdown_tbl.set('row', '1,0', 'Commission')
+	bucket_commissions = stats.calc_bucket_commissions()
+	for i in range(3): bucket_breakdown_tbl.set('row', f'1,{i+1}', f'${round(bucket_commissions[i], 2)}') # TODO: doesn't include service plans?
+	bucket_breakdown_tbl.set('row', '1,4', f'${round(stats.calc_out_of_dept_commission(), 2)}')
+	bucket_breakdown_tbl.set('row', '1,5', f'${round(stats.calc_service_plan_commission(), 2)}')
+
+	# Sales row
+	bucket_breakdown_tbl.set('row', '2,0', 'Sales')
+	for i in range(3): bucket_breakdown_tbl.set('row', f'2,{i+1}', f'${round(stats.bucket_totals[i], 2)}') # TODO: doesn't include service plans?
+	bucket_breakdown_tbl.set('row', '2,4', f'${round(stats.out_of_dept_total, 2)}')
+	bucket_breakdown_tbl.set('row', '2,5', f'${round(stats.service_plan_total, 2)}')
+
+	# % total sales row
+	bucket_breakdown_tbl.set('row', '3,0', '% Total Sales')
+	for i in range(3): bucket_breakdown_tbl.set('row', f'3,{i+1}', f'{round(stats.bucket_totals[i] / sales_total * 100, 2)}%') # TODO: doesn't include service plans?
+	bucket_breakdown_tbl.set('row', '3,4', f'{round(stats.out_of_dept_total / sales_total * 100, 2)}%')
+	bucket_breakdown_tbl.set('row', '3,5', f'{round(stats.service_plan_total / sales_total * 100, 2)}%')
+
+def clear(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats):
 	transactions_txt.delete('1.0', 'end')
 	for ent in deductions_ents: ent.delete(0, 'end')
 	for lbl in results_lbls.values(): lbl['text'] = ''
+
+	# TODO: clear table
 
 	stats.clear()
 
@@ -183,26 +215,30 @@ if __name__ == '__main__':
 	results_lbls['overall_rate_lbl'] = tk.Label(master=results_frame)
 
 	# Creating results table broken down by bucket
-#	bucket_breakdown_tbl = tktable.Table(master=window, cols=6, rows=4)
-#	bucket_breakdown_cols = ['6% Bracket', '3% Bracket', '1.5% Bracket', 'Out of Dept']
-#	var = tktable.ArrayVar(window)
+	bucket_breakdown_tbl = tktable.Table(master=window, cols=6, rows=4, colwidth=12, height=6)
+	bucket_breakdown_cols = ['', '6% Bracket', '3% Bracket', '1.5% Bracket', 'Out of Dept', 'Service Plans']
+	var = tktable.ArrayVar(window)
 
-#	row_cnt, col_cnt = 0,0
-#	for col in bucket_breakdown_cols:
-#		i = f'{row_cnt},{col_cnt}'
-#		var[i] = col
-#		col_cnt += 1
-#	bucket_breakdown_tbl['variable'] = var
-#	
-#	for lbl in results_lbls.values(): lbl.pack()
+	row_cnt, col_cnt = 0,0
+	for col in bucket_breakdown_cols:
+		i = f'{row_cnt},{col_cnt}'
+		var[i] = col
+		col_cnt += 1
+	bucket_breakdown_tbl['variable'] = var
+	bucket_breakdown_tbl.tag_row('header', 0)
+	bucket_breakdown_tbl.tag_col('header', 0)
+	bucket_breakdown_tbl.tag_configure('header', background='grey')
+	bucket_breakdown_tbl.tag_configure('header', foreground='white')
+	
+	for lbl in results_lbls.values(): lbl.pack()
 
 	# Results should be saved and added together between process clicks until cleared
 	bucket_totals = [0,0,0]
 	
 	btn_frame = tk.Frame(master=window)
 	paste_page_btn = tk.Button(text='Paste New Page', master=btn_frame, command=lambda: paste_page(transactions_txt, window))
-	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_results(transactions_txt, deductions_ents, results_lbls, stats))
-	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, results_lbls, stats))
+	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_results(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats))
+	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats))
 
 	paste_page_btn.pack(side=tk.LEFT)
 	proc_btn.pack(side=tk.LEFT)
@@ -216,7 +252,8 @@ if __name__ == '__main__':
 
 	btn_frame.pack()
 	results_frame.pack()
-#	bucket_braekdown_tbl.pack()
+	bucket_breakdown_tbl.pack()
 
 	# Start running app
 	window.mainloop()
+
