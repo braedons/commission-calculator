@@ -79,7 +79,7 @@ def calc_commission(table, deductions_ents, stats):
 		for item in table:
 			# Format differs for sale and exchange transactions
 			if item[1] == 'sale':
-				unit_price, total = float(item[-2][1:]), float(item[-1][1:])
+				unit_price, total = float(item[-2][1:].replace(',', '')), float(item[-1][1:].replace(',', ''))
 
 				# Service plans have different rates
 				if is_service_plan(item[4]):
@@ -88,8 +88,7 @@ def calc_commission(table, deductions_ents, stats):
 					bucket_index = get_commission_bucket(unit_price)
 					stats.bucket_totals[bucket_index] += total # TODO: does (total == qty*unit_price)?
 			elif item[1] == 'exchange':
-				# TODO: exchange and service?
-				total = float(item[-1][2:-1]) # TODO: verify total is ok, qty doesn't matter
+				total = float(item[-1][2:-1].replace(',', '')) # TODO: verify total is ok, qty doesn't matter
 				bucket_index = get_commission_bucket(total)
 				stats.bucket_totals[bucket_index] += total
 
@@ -103,7 +102,7 @@ def calc_commission(table, deductions_ents, stats):
 		# TODO: handle malformed input
 		ent = deductions_ents[i].get()
 		if ent:
-			ent = float(ent)
+			ent = float(ent.replace(',', ''))
 			stats.deductions[i] = ent
 			stats.out_of_dept_total += ent
 	
