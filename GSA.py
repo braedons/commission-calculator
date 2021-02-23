@@ -1,6 +1,8 @@
 import tkinter as tk
+import tkinter.messagebox
 import tktable
 from math import inf
+from sys import exc_info
 
 COMMISSION_RATES = (.06, .03, .015)
 COMMISSION_RANGES = ((0, 9.99), (10, 99.99), (100, inf))
@@ -114,43 +116,49 @@ def count_customers(table, stats):
 	return len(stats.seen_custs)
 
 def update_results(text_in, deductions_ents, results_lbls, bucket_breakdown_tbl, stats):
-	table = parse_table(text_in)
-	commission, sales_total = calc_commission(table, deductions_ents, stats)
-	n_custs = count_customers(table, stats)
+	try:
+		table = parse_table(text_in)
+		commission, sales_total = calc_commission(table, deductions_ents, stats)
+		n_custs = count_customers(table, stats)
 
-	results_lbls['commission_lbl']['text'] = 'Total Commission: $' + str(round(commission, 2))
-	results_lbls['cust_lbl']['text'] = 'Customers Helped: ' + str(n_custs)
-	results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
-	results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + (str(round(commission / sales_total * 100, 2)) if sales_total else '0') + '%' # Handles divide by 0 error
+		results_lbls['commission_lbl']['text'] = 'Total Commission: $' + str(round(commission, 2))
+		results_lbls['cust_lbl']['text'] = 'Customers Helped: ' + str(n_custs)
+		results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
+		results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + (str(round(commission / sales_total * 100, 2)) if sales_total else '0') + '%' # Handles divide by 0 error
 
-	# Update breakdown table
-	# Commission row
-	bucket_breakdown_tbl.set('row', '1,0', 'Commission')
-	bucket_commissions = stats.calc_bucket_commissions()
-	for i in range(3): bucket_breakdown_tbl.set('row', f'1,{i+1}', f'${round(bucket_commissions[i], 2)}') # TODO: doesn't include service plans?
-	bucket_breakdown_tbl.set('row', '1,4', f'${round(stats.calc_out_of_dept_commission(), 2)}')
-	bucket_breakdown_tbl.set('row', '1,5', f'${round(stats.calc_service_plan_commission(), 2)}')
+		# Update breakdown table
+		# Commission row
+		bucket_breakdown_tbl.set('row', '1,0', 'Commission')
+		bucket_commissions = stats.calc_bucket_commissions()
+		for i in range(3): bucket_breakdown_tbl.set('row', f'1,{i+1}', f'${round(bucket_commissions[i], 2)}') # TODO: doesn't include service plans?
+		bucket_breakdown_tbl.set('row', '1,4', f'${round(stats.calc_out_of_dept_commission(), 2)}')
+		bucket_breakdown_tbl.set('row', '1,5', f'${round(stats.calc_service_plan_commission(), 2)}')
 
-	# Sales row
-	bucket_breakdown_tbl.set('row', '2,0', 'Sales')
-	for i in range(3): bucket_breakdown_tbl.set('row', f'2,{i+1}', f'${round(stats.bucket_totals[i], 2)}') # TODO: doesn't include service plans?
-	bucket_breakdown_tbl.set('row', '2,4', f'${round(stats.out_of_dept_total, 2)}')
-	bucket_breakdown_tbl.set('row', '2,5', f'${round(stats.service_plan_total, 2)}')
+		# Sales row
+		bucket_breakdown_tbl.set('row', '2,0', 'Sales')
+		for i in range(3): bucket_breakdown_tbl.set('row', f'2,{i+1}', f'${round(stats.bucket_totals[i], 2)}') # TODO: doesn't include service plans?
+		bucket_breakdown_tbl.set('row', '2,4', f'${round(stats.out_of_dept_total, 2)}')
+		bucket_breakdown_tbl.set('row', '2,5', f'${round(stats.service_plan_total, 2)}')
 
-	# % total sales row
-	bucket_breakdown_tbl.set('row', '3,0', '% Total Sales')
-	for i in range(3): bucket_breakdown_tbl.set('row', f'3,{i+1}', f'{round(stats.bucket_totals[i] / sales_total * 100, 2)}%') # TODO: doesn't include service plans?
-	bucket_breakdown_tbl.set('row', '3,4', f'{round(stats.out_of_dept_total / sales_total * 100, 2)}%')
-	bucket_breakdown_tbl.set('row', '3,5', f'{round(stats.service_plan_total / sales_total * 100, 2)}%')
+		# % total sales row
+		bucket_breakdown_tbl.set('row', '3,0', '% Total Sales')
+		for i in range(3): bucket_breakdown_tbl.set('row', f'3,{i+1}', f'{round(stats.bucket_totals[i] / sales_total * 100, 2)}%') # TODO: doesn't include service plans?
+		bucket_breakdown_tbl.set('row', '3,4', f'{round(stats.out_of_dept_total / sales_total * 100, 2)}%')
+		bucket_breakdown_tbl.set('row', '3,5', f'{round(stats.service_plan_total / sales_total * 100, 2)}%')
+	except Exception:
+		print_exception()
 
 def clear(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats):
-	transactions_txt.delete('1.0', 'end')
-	for ent in deductions_ents: ent.delete(0, 'end')
-	for lbl in results_lbls.values(): lbl['text'] = ''
+	try:
+		transactions_txt.delete('1.0', 'end')
+		for ent in deductions_ents: ent.delete(0, 'end')
+		for lbl in results_lbls.values(): lbl['text'] = ''
 
-	# TODO: clear table
+		# TODO: clear table
 
-	stats.clear()
+		stats.clear()
+	except Exception:
+		print_exception()
 
 def paste_page(transactions_txt, window):
 	transactions_txt.delete('1.0', 'end')
@@ -160,6 +168,12 @@ def paste_page(transactions_txt, window):
 	except:
 		clipboard = ''
 	transactions_txt.insert('end', clipboard)
+
+def print_exception():
+	exception_type, exception_object, exception_traceback = exc_info()
+	filename = exception_traceback.tb_frame.f_code.co_filename
+	line_number = exception_traceback.tb_lineno
+	tk.messagebox.showerror('Error', f'{exception_type} error in {filename}:{line_number}')
 
 # ----------------------------------------------------------- Event Callbacks
 
