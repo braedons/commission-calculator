@@ -16,4 +16,6 @@ A utility for Microcenter employees to calculate their commission
 ## Dependencies
 * tkinter
 * [tktable](https://github.com/nbro/tktable)
-  * Add its [dependency](https://sourceforge.net/projects/tktable/) to lib/site-packages
+  * Add its dependency
+    * For linux: `sudo apt install tk-table`
+    * [Download here otherwise](https://sourceforge.net/projects/tktable/) to `lib/site-packages` (I had some trouble using the link)
