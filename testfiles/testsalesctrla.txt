@@ -1,0 +1,95 @@
+Order History logoOrder History
+esexton [ Log off ]
+Sales Lookup - 2/10/2021
+Date
+2/10/2021
+Store
+101 - Tustin
+Sales Person
+esexton
+Cashier/CSR
+ 
+Details assigned to esexton on 2/10/2021
+ 
+Units
+Revenue
+Attach %
+ASP
+Revenue Per Unit
+Customers Served: 41	 	$6,252.74	 	 	$67.48
+Computers Sold	0	$0.00		$0.00	
+Service Plans Sold	5	$134.95	2.16 %	$26.99	$67.48
+ESET Sold	0	$0.00	0.00 %	$0.00	$0.00
+Office Sold	0	$0.00	0.00 %	$0.00	$0.00
+Monitors	0	$0.00	0.00 %	$0.00	$0.00
+Nord VPN	0	$0.00	0.00 %	$0.00	$0.00
+Processors Sales	0	$0.00		$0.00	
+Processor Attach	0	$0.00			$0.00
+Custom Builds	0	$0.00	0.00 %	$0.00	
+Custom Build Service Plan	0	$0.00	0.00 %	$0.00	
+Micro Center Insider Card		$219.99	3.52 %		
+Transaction Number
+Sale Type
+Line
+Sku
+Description
+Qty
+Unit Price
+Total
+ 	 	 	 	 	 	 	Total: $6,252.74
+101-PO-11123602	Sale	1	404418	HDMI Female to DVI-D Male Adapter - Black	1	$9.99	$9.99
+101-PO-11123579	Sale	1	414193	Mini DisplayPort Male to HDMI Male Cable 6 ft. - Black	1	$9.99	$9.99
+101-PO-11123568	Sale	1	408922	USB 3.1 (Gen 1 Type-C) Dock with Power Delivery	1	$89.99	$89.99
+101-PO-11123568	Sale	2	752725	VGA Male to VGA Male Cable 6ft - Black	1	$9.99	$9.99
+101-PO-11123568	Sale	3	079491	Mini DisplayPort 1.2 Male to HDMI Male Video Adapter Cable 6 ft. - White	1	$17.99	$17.99
+101-PO-11123546	Sale	3	894808	Codey Rocky	1	$99.99	$99.99
+101-PO-11123531	Sale	12	974725	G815 LIGHTSYNC RGB Mechanical Gaming Keyboard - Romer-G Clicky	1	$194.99	$194.99
+101-PO-11123531	Sale	13	024364	2 Year Replacement Plan	1	$19.99	$19.99
+101-PO-11123531	Sale	14	105742	MM711 RGB Gaming Mouse - Metallic Blue Limited Edition	1	$34.99	$34.99
+101-PO-11123531	Sale	15	937003	ASSIST XL Cloth Mouse Mat - Aspen	1	$14.99	$14.99
+101-PO-11123529	Sale	2	935510	USB-C Male to Dual HDMI Female Converter - Black	1	$69.99	$69.99
+101-PO-11123509	Sale	2	052704	Model D Gaming Mouse - Matte Black	1	$49.99	$49.99
+101-PO-11123503	Sale	1	109843	Alloy Origins Mechanical Gaming Keyboard - HyperX Aqua	1	$80.85	$80.85
+101-PO-11123443	Sale	1	158493	Lightning Male to USB 2.0 (Type-A) Male Apple MFi Certified Charge/ Sync Cable 3.3 ft - White	1	$19.99	$19.99
+101-RE-11123428	Exchange	1	399386	DisplayPort Male to HDMI Male Cable 6 ft. - Black	-1	($19.99)	($19.99)
+101-PO-11123414	Sale	1	024752	Wireless 2.4GHz Gamepad Controller - Silver	1	$49.99	$49.99
+101-PO-11123377	Sale	1	037416	5,200mAh Power Bank - Black	1	$0.01	$0.01
+101-PO-11123367	Sale	1	659094	Nylon Cable Ties 4 Inch Black 100 pack	1	$3.99	$3.99
+101-PO-11123367	Sale	2	917435	CAT 6 Snagless Network Cable 75 ft. - White	1	$54.99	$54.99
+101-PO-11123367	Sale	3	917302	CAT 6 Snagless Network Cable 75 ft. – Black	1	$54.99	$54.99
+101-PO-11123367	Sale	4	219352	MM720 White Matte Lightweight Gaming Mouse with Ultraweave Cable, 16000 DPI Optical Sensor, RGB and Unique Claw Grip Shape	1	$49.99	$49.99
+101-PO-11123367	Sale	5	888990	SK630 Tenkeyless Mechanical Keyboard with Cherry MX Low Profile Switches in Brushed Aluminum Design	1	$119.99	$119.99
+101-PO-11123325	Sale	1	049635	ATR6550X Condenser Shotgun Microphone	1	$79.99	$79.99
+101-PO-11123325	Sale	2	024158	2 Year Replacement Plan	1	$9.99	$9.99
+101-PO-11123325	Sale	3	032870	Microphone Boom Scissor Arm Stand	1	$17.98	$17.98
+101-PO-11123282	Sale	1	503094	CAT 6 Molded Boots Network Cable 7 ft. - Blue	1	$9.99	$9.99
+101-PO-11123278	Sale	6	170456	u49 USB Studio Condenser Microphone	1	$39.99	$39.99
+101-PO-11123267	Sale	1	924167	Microfiber Cleaning Cloths 12" x 12" - 4 pack	1	$3.99	$3.99
+101-PO-11123267	Sale	2	438416	Micro-HDMI Male to HDMI Female Digital A/V HD Camera Conversion Cable	1	$14.99	$14.99
+101-PO-11123267	Sale	3	461004	Audio De-Embedder with 3D Support	1	$62.99	$62.99
+101-PO-11123262	Sale	1	030965	AC600 High Gain Wireless Dual Band USB Adapter	1	$19.99	$19.99
+101-PO-11123219	Sale	1	995555	HP4500B 360 Bluetooth Headphones - Black	1	$0.01	$0.01
+101-PO-11123219	Sale	3	031740	TMX Force Feed Wheel X1 PC	1	$199.99	$199.99
+101-PO-11123213	Sale	1	022558	Yeti USB Microphone for Recording & Streaming, 3 Condenser Capsules, Adjustable Stand, Plug & Play - Black	1	$129.99	$129.99
+101-PO-11123209	Sale	1	394486	ErgoSoft Wrist Rest for Standard Mouse	1	$11.99	$11.99
+101-PO-11123209	Sale	2	036624	USB 2.0 (Type-A) Male to USB 2.0 (Type-A) Female Cable 3 ft. - Black	1	$12.99	$12.99
+101-PO-11123207	Sale	2	869974	M65 ELITE - FPS Gaming Mouse - 18,000 DPI Optical Sensor - Adjustable DPI Sniper Button - Tunable Weights - Black	1	$59.99	$59.99
+101-PO-11123207	Sale	5	192369	K70 RGB MK.2 RapidFire Mechanical Gaming Keyboard Refurbished - Cherry MX Speed	1	$99.99	$99.99
+101-PO-11123190	Sale	1	402461	USB 2.0 (Type-A) Male to USB 2.0 (Type-C) Male Cable 6.56 ft. - Black	1	$10.99	$10.99
+101-PO-11123190	Sale	2	146076	Memory Foam Mouse Pad with Wrist Rest	1	$14.99	$14.99
+101-PO-11123175	Sale	1	164301	CC2209C-06 USB Cable - Type A Male USB - Type B Male USB - 6ft - Black	1	$14.99	$14.99
+101-WP-11123158	Sale	2	976506	CAT 7 Slim Snagless Molded Boots Flexible Network Cable 3 ft. – Black	1	$15.99	$15.99
+101-WP-11123158	Sale	3	346932	SB8200 SURFboard DOCSIS 3.1 Cable Modem	1	$153.99	$153.99
+101-PO-11123104	Sale	1	056937	All in One Card Reader (SD, MS, MicroSD)	1	$9.99	$9.99
+101-PO-11123100	Sale	1	896704	Cam IQ Security Camera; Indoor/Outdoor; 1080p Resolution; 130° FOV; Wi-Fi Connectivity; AC Powered	1	$399.99	$399.99
+101-PO-11123100	Sale	2	025809	3 Year Replacement Plan	1	$89.99	$89.99
+101-PO-11123000	Sale	1	389197	16-Port Gigabit Easy Smart PoE Switch with 8-Port PoE+	1	$139.99	$139.99
+101-PO-11122984	Sale	1	217992	V3 Minimalistic 2.0 USB-C Desktop Speakers with USB Audio Clear Dialog Enhancement Bluetooth 5.0 8W RMS with 16W Peak Power USB-A Converter Included (Black)	1	$39.99	$39.99
+101-PO-11122984	Sale	2	046292	Mini USB Dual-Mode Bluetooth 4.0 Adapter	1	$12.99	$12.99
+101-WP-11122944	Sale	4	989269	1.75mm Black PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+1
+2
+3
+50
+items per page
+©2021 Micro Electronics, Inc.

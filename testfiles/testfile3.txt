@@ -1,0 +1,134 @@
+Order History logoOrder History
+esexton [ Log off ]
+Sales Lookup - 12/23/2020
+Date
+12/23/2020
+Store
+101 - Tustin
+Sales Person
+esexton
+Cashier/CSR
+ 
+Details assigned to esexton on 12/23/2020
+ 
+Units
+Revenue
+Attach %
+ASP
+Revenue Per Unit
+Customers Served: 27	 	$10,804.24	 	 	$0.00
+Computers Sold	0	$0.00		$0.00	
+Service Plans Sold	1	$139.99	1.30 %	$139.99	$0.00
+ESET Sold	0	$0.00	0.00 %	$0.00	$0.00
+Office Sold	0	$0.00	0.00 %	$0.00	$0.00
+Monitors	0	$0.00	0.00 %	$0.00	$0.00
+Nord VPN	0	$0.00	0.00 %	$0.00	$0.00
+Processors Sales	9	$3,419.91		$379.99	
+Processor Attach	19	$2,952.80			$268.44
+Custom Builds	0	$0.00	0.00 %	$0.00	
+Custom Build Service Plan	0	$0.00	0.00 %	$0.00	
+Micro Center Insider Card		$859.97	7.96 %		
+Transaction Number
+Sale Type
+Line
+Sku
+Description
+Qty
+Unit Price
+Total
+ 	 	 	 	 	 	 	Total: $10,804.24
+101-PO-11041753	Sale	1	138123	ROG STRIX 850 Watt 80 Plus Gold ATX Fully Modular Power Supply	1	$184.99	$184.99
+101-PO-11041753	Sale	2	213082	AMD Radeon RX 6800 XT Red Devil Limited Edition Overclocked Triple-Fan 16GB GDDR6 PCIe 4.0 Graphics Card	1	$829.99	$829.99
+101-RE-11041750	Exchange	1	195099	Ryzen 9 5900X Vermeer 3.7GHz 12-Core AM4 Boxed Processor	1	$549.99	$549.99
+101-RE-11041750	Exchange	2	138156	ROG Strix LC 240mm RGB Water Cooling Kit - White	1	$209.99	$209.99
+101-PO-11041713	Sale	1	354753	FURY S Pro Extended Gaming Mouse Pad	1	$29.99	$29.99
+101-PO-11041713	Sale	2	982108	O11 Dynamic XL ROG Tempered Glass eATX Full Tower Computer Case - White	1	$199.99	$199.99
+101-PO-11041713	Sale	3	081380	Kraken Z73 360mm RGB CPU Water Cooling Kit	1	$299.99	$299.99
+101-PO-11041713	Sale	4	023655	K70 RGB MK.2 Mechanical Gaming Keyboard - USB Passthrough & Media Controls - Tactile & Clicky - Cherry MX Blue - RGB LED Backlit	1	$139.99	$139.99
+101-PO-11041713	Sale	5	955542	X570-E ROG Strix Gaming AMD AM4 ATX Motherboard	1	$279.99	$279.99
+101-PO-11041713	Sale	6	195073	Ryzen 5 5600X Vermeer 3.7GHz 6-Core AM4 Boxed Processor with Wraith Stealth Cooler	1	$299.99	$299.99
+101-PO-11041713	Sale	7	052738	Model D Gaming Mouse - Glossy White	1	$59.99	$59.99
+101-PO-11041713	Sale	8	866681	Trident Z Royal RGB 16GB (2 x 8GB) DDR4-3600 PC4-28800 CL18 Dual-Channel Desktop Memory Kit F4-3600C18D-16GTRS - Silver	1	$119.99	$119.99
+101-PO-11041713	Sale	9	968701	18 Piece Precision Driver Set	1	$9.98	$9.98
+101-PO-11041713	Sale	10	976761	Microsoft Windows 10 Home 32/64-Bit - USB	1	$139.99	$139.99
+101-PO-11041713	Sale	11	944538	Black SN750 1TB SSD 3D V-NAND PCIe NVMe Gen 3 x 4 M.2 2280 Internal Solid State Drive	1	$124.99	$124.99
+101-PO-11041713	Sale	12	944538	Black SN750 1TB SSD 3D V-NAND PCIe NVMe Gen 3 x 4 M.2 2280 Internal Solid State Drive	1	$124.99	$124.99
+101-PO-11041713	Sale	13	213082	AMD Radeon RX 6800 XT Red Devil Limited Edition Overclocked Triple-Fan 16GB GDDR6 PCIe 4.0 Graphics Card	1	$829.99	$829.99
+101-PO-11041713	Sale	14	026419	2 Year Protection Plan	1	$99.99	$99.99
+101-PO-11041658	Sale	1	195073	Ryzen 5 5600X Vermeer 3.7GHz 6-Core AM4 Boxed Processor with Wraith Stealth Cooler	1	$299.99	$299.99
+101-PO-11041567	Sale	1	195099	Ryzen 9 5900X Vermeer 3.7GHz 12-Core AM4 Boxed Processor	1	$549.99	$549.99
+101-RE-11041558	Return	1	071092	GeForce GTX 1660 Super Advance ROG Strix Overclocked Dual-Fan 6GB GDDR6 PCIe 3.0 Graphics Card	-1	($199.96)	($199.96)
+101-RE-11041558	Return	2	024364	2 Year Replacement Plan	-1	($19.99)	($19.99)
+101-PO-11041540	Sale	1	045617	Magnetic Wrist Band	1	$2.98	$2.98
+101-PO-11041540	Sale	2	831362	Core i9-9900K Coffee Lake 3.6GHz Eight-Core LGA 1151 Boxed Processor	1	$299.99	$299.99
+101-PO-11041536	Sale	1	805424	Windows 10 Home 64-bit OEM DVD - English	1	$119.99	$119.99
+101-PO-11041522	Sale	1	862318	BarraCuda 2TB 7200RPM SATA III 6Gb/s 3.5" Internal Hard Drive	1	$54.99	$54.99
+101-PO-11041520	Sale	1	965731	Maestro Multipurpose Paper; 8.5" x 11" (Letter); 99 Brightness; 20 lb; 500 Sheets	1	$1.99	$1.99
+101-PO-11041520	Sale	2	089664	Touchaqua Notos O RGB Hydro Bearing 120mm Case Fan - 5 Pack	1	$69.99	$69.99
+101-PO-11041512	Sale	1	178939	GeForce GTX 1050 Ti Overclocked Dual-Fan 4GB GDDR5 PCIe 3.0 Graphics Cards	1	$139.99	$139.99
+101-PO-11041512	Sale	2	055160	GeForce GTX 1660 Super TUF Overclocked Dual-Fan 6GB GDDR6 PCIe 3.0 Graphics Card	1	$229.99	$229.99
+101-PO-11041512	Sale	3	040204	GeForce GTX 1660 Super Dual Overclocked Dual-Fan 6GB GDDR6 PCIe 3.0 Graphics Card	1	$239.99	$239.99
+101-PO-11041512	Sale	4	441352	6-feet Audio Cable 3.5mm Male to Male (M06-730)	1	$6.99	$6.99
+101-PO-11041512	Sale	5	033662	6 Pin to 8 Pin PCIe Adapter Power Cable - Black/ Yellow	1	$9.99	$9.99
+101-PO-11041512	Sale	6	033662	6 Pin to 8 Pin PCIe Adapter Power Cable - Black/ Yellow	1	$9.99	$9.99
+101-PO-11041512	Sale	7	033662	6 Pin to 8 Pin PCIe Adapter Power Cable - Black/ Yellow	1	$9.99	$9.99
+101-PO-11041496	Sale	1	166256	MPG GUNGNIR 110R ATX Mid-Tower Computer Case	1	$109.99	$109.99
+101-PO-11041496	Sale	3	862318	BarraCuda 2TB 7200RPM SATA III 6Gb/s 3.5" Internal Hard Drive	1	$54.99	$54.99
+101-PO-11041496	Sale	6	348201	Ripjaws V 16GB (2 x 8GB) DDR4-3200 PC4-25600 CL16 Dual Channel Desktop Memory Kit F4-3200C16D-16GVKB - Black	1	$64.99	$64.99
+101-WP-11041461	Sale	5	040204	GeForce GTX 1660 Super Dual Overclocked Dual-Fan 6GB GDDR6 PCIe 3.0 Graphics Card	1	$239.99	$239.99
+101-PO-11041415	Sale	1	162594	Quest 2 Carrying Case for Lightweight, Portable Protection – VR	1	$49.99	$49.99
+101-PO-11041415	Sale	2	952705	GO2 Waterproof Ultra Portable Bluetooth Speaker - Black	1	$19.99	$19.99
+101-PO-11041415	Sale	3	162446	Quest 2 - Advanced All-In-One Virtual Reality Headset - 256 GB	1	$399.99	$399.99
+101-PO-11041415	Sale	4	021840	1 Year Accidental Damage Protection Plan	1	$59.99	$59.99
+101-PO-11041398	Sale	1	951970	Ryzen 5 3600 Matisse 3.6GHz 6-Core AM4 Boxed Processor with Wraith Stealth Cooler	1	$219.99	$219.99
+101-PO-11041395	Sale	1	860270	256GB SSD 3D NAND M.2 2280 PCIe NVMe 3.0 x4 Internal Solid State Drive	1	$37.99	$37.99
+101-PO-11041395	Sale	2	091264	3 Outlet Adapter - Orange	1	$2.99	$2.99
+101-PO-11041395	Sale	3	862318	BarraCuda 2TB 7200RPM SATA III 6Gb/s 3.5" Internal Hard Drive	1	$54.99	$54.99
+101-PO-11041378	Sale	1	195081	Ryzen 7 5800X Vermeer 3.8GHz 8-Core AM4 Boxed Processor	1	$449.99	$449.99
+101-PO-11041340	Sale	1	159848	Monster Neon Smart Indoor/Outdoor Multi-Color LED Light Strip - 5m (16.4ft)	1	$25.99	$25.99
+101-PO-11041340	Sale	2	206946	Pi POE BOARD	1	$20.00	$20.00
+101-PO-11041340	Sale	3	191197	HDMI Input to USB 2.0 Video Capture Adapter	1	$29.99	$29.99
+101-PO-11041314	Sale	1	193243	GeForce RTX 3070 Gaming X Trio Triple-Fan 8GB GDDR6 PCIe 4.0 Graphics Card	1	$624.99	$624.99
+101-PO-11041305	Sale	1	016634	K400 Wireless Touch Keyboard	1	$19.99	$19.99
+101-PO-11041305	Sale	2	831438	Core i7-9700K Coffee Lake 3.6GHz Eight-Core LGA 1151 Boxed Processor	1	$199.99	$199.99
+101-PO-11041305	Sale	3	066415	ONE Aluminum Raspberry Pi Case	1	$25.00	$25.00
+101-PO-11041305	Sale	4	094524	850 Watt 80 Plus Gold ATX Fully Modular Power Supply	1	$119.99	$119.99
+101-PO-11041305	Sale	5	939371	Blue 1TB SSD 3D NAND SATA III 6Gb/s 2.5" Internal Solid State Drive	1	$114.99	$114.99
+101-PO-11041295	Sale	1	965731	Maestro Multipurpose Paper; 8.5" x 11" (Letter); 99 Brightness; 20 lb; 500 Sheets	1	$1.99	$1.99
+101-PO-11041295	Sale	2	952705	GO2 Waterproof Ultra Portable Bluetooth Speaker - Black	2	$19.99	$39.98
+101-PO-11041224	Sale	1	195099	Ryzen 9 5900X Vermeer 3.7GHz 12-Core AM4 Boxed Processor	1	$549.99	$549.99
+101-PO-11041183	Sale	1	040204	GeForce GTX 1660 Super Dual Overclocked Dual-Fan 6GB GDDR6 PCIe 3.0 Graphics Card	1	$239.99	$239.99
+101-PO-11041177	Sale	1	072330	GS500 Stentor PC Gaming Speakers	1	$24.99	$24.99
+101-PO-11041177	Sale	2	835280	Home Hub - Chalk	1	$69.99	$69.99
+101-PO-11041177	Sale	5	139717	Essential Gaming Bundle - Black	1	$99.99	$99.99
+101-PO-11041161	Sale	1	136507	CR-1 Small Pneumatic Joint	1	$2.99	$2.99
+101-PO-11041161	Sale	2	136150	Ender-3 Hotend Silicon Sock	1	$1.49	$1.49
+101-PO-11041161	Sale	3	136150	Ender-3 Hotend Silicon Sock	1	$1.49	$1.49
+101-PO-11041161	Sale	4	136507	CR-1 Small Pneumatic Joint	1	$2.99	$2.99
+101-PO-11041161	Sale	5	135830	0.4 mm MK8 Extruder Nozzle (4 Pack)	1	$4.99	$4.99
+101-PO-11041161	Sale	6	136804	Capricorn 1 Meter Bowden PTFE Tube (without Pneumatic connector)	1	$10.99	$10.99
+101-PO-11041161	Sale	7	136663	CR-10S 400/500 PTFE Filament Guide Tube	1	$3.99	$3.99
+101-PO-11041161	Sale	8	135483	MK10 Plated Wear Resistant Nozzle for PTFE lined hotend 0.6mm	1	$14.99	$14.99
+101-PO-11041157	Sale	2	327239	SoundLink Color II Speaker - Black	1	$129.99	$129.99
+101-RE-11041153	Return	1	984310	Go Rocker Ultra-Portable Wireless Speaker - Black	-1	($14.99)	($14.99)
+101-PO-11040909	Sale	1	170498	BFE 95% Face Mask 3-ply - 50 Pack	1	$9.99	$9.99
+101-PO-11040909	Sale	3	968701	18 Piece Precision Driver Set	1	$9.98	$9.98
+101-PO-11040909	Sale	5	361030	Prying and Opening Tool Assortment	1	$9.98	$9.98
+101-PO-11040909	Sale	6	782375	USB 3.1 Gen 2 (Type-C) Male to HDMI Male	1	$39.99	$39.99
+101-PO-11040909	Sale	7	693531	Big Foot Colorstops Rubber Doorstop Ivory	1	$4.99	$4.99
+101-PO-11040909	Sale	8	203745	Jimmy Electronics Opening Knife	1	$9.98	$9.98
+101-PO-11040909	Sale	9	935510	USB-C Male to Dual HDMI Female Converter - Black	1	$69.99	$69.99
+101-PO-11040909	Sale	10	399576	DisplayPort Male to HDMI Female Adapter - Black	1	$9.99	$9.99
+101-PO-11040883	Sale	1	052035	Basic Starter V2 Kit for Arduino UNO	1	$34.99	$34.99
+101-PO-11040882	Sale	1	053934	Sky Force Battling Laser Drone	1	$0.01	$0.01
+101-PO-11040879	Sale	1	053934	Sky Force Battling Laser Drone	1	$0.01	$0.01
+101-PO-11040860	Sale	1	040568	Viper Ultimate Gaming Mouse	1	$139.99	$139.99
+101-PO-11040643	Sale	3	037416	5,200mAh Power Bank - Black	1	$0.01	$0.01
+101-RE-11040626	Exchange	1	740613	2-Pack of NP-F750 Lithium Ion Batteries w/ Charger	-1	($69.99)	($69.99)
+101-RE-11040626	Exchange	1	996850	JCH347 USB 3.1 (Gen 2 Type-C) 3-Port HUB with SD/MicroSD Card Reader	1	$29.99	$29.99
+101-RE-11040626	Exchange	2	741413	2-Pack of NP-F970 Lithium Ion Batteries w/ Charger	-1	($89.99)	($89.99)
+101-PO-11040601	Sale	4	022400	Yeti Nano Premium USB Condenser Microphone for Recording and Streaming - Gray	1	$99.99	$99.99
+1
+100
+items per page
+©2021 Micro Electronics, Inc.

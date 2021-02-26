@@ -1,0 +1,113 @@
+Order History logoOrder History
+esexton [ Log off ]
+Sales Lookup - 2/15/2021
+Date
+2/15/2021
+Store
+101 - Tustin
+Sales Person
+esexton
+Cashier/CSR
+ 
+Details assigned to esexton on 2/15/2021
+ 
+Units
+Revenue
+Attach %
+ASP
+Revenue Per Unit
+Customers Served: 27	 	$2,945.15	 	 	$0.00
+Computers Sold	0	$0.00		$0.00	
+Service Plans Sold	4	$35.96	1.22 %	$8.99	$0.00
+ESET Sold	0	$0.00	0.00 %	$0.00	$0.00
+Office Sold	0	$0.00	0.00 %	$0.00	$0.00
+Monitors	0	$0.00	0.00 %	$0.00	$0.00
+Nord VPN	0	$0.00	0.00 %	$0.00	$0.00
+Processors Sales	0	$0.00		$0.00	
+Processor Attach	0	$0.00			$0.00
+Custom Builds	0	$0.00	0.00 %	$0.00	
+Custom Build Service Plan	0	$0.00	0.00 %	$0.00	
+Micro Center Insider Card		$0.00	0.00 %		
+Transaction Number
+Sale Type
+Line
+Sku
+Description
+Qty
+Unit Price
+Total
+ 	 	 	 	 	 	 	Total: $2,945.15
+101-PO-11133057	Sale	1	957662	4 Outlet Metal Casing Surge Protector w/ 6 ft. Cord - Yellow	1	$19.99	$19.99
+101-PO-11133057	Sale	2	996868	USB (Type-C) Male to HDMI Female 4K Adapter 5.7 in. - White	1	$24.99	$24.99
+101-RE-11132924	Exchange	1	399436	Mini-HDMI 4x1 Switch	-1	($29.99)	($29.99)
+101-PO-11132618	Sale	1	790196	CAT 6 Snagless Crossover Network Cable 10 ft. - Red	1	$12.99	$12.99
+101-PO-11132618	Sale	2	118802	USB 3.1 (Gen 1 Type-A) Male to USB 3.1 (Gen 1 Type-A) Male Cable - Blue	1	$17.99	$17.99
+101-PO-11132618	Sale	3	495432	CAT 6 Snagless Network Cable 7 ft. - Black	1	$9.99	$9.99
+101-PO-11132618	Sale	4	480566	CAT 5e Snagless Network Cable 10 ft. - Blue	1	$9.99	$9.99
+101-PO-11132618	Sale	5	753574	Cat 6 Network Cable 3 ft. 5 Pack - Gray	1	$11.99	$11.99
+101-PO-11132570	Sale	1	066530	TUNE 115 Wireless Earbuds - Blue	1	$29.99	$29.99
+101-RE-11132527	Exchange	1	936997	ASSIST XL Gaming Mouse Pad - Stealth	-1	($14.99)	($14.99)
+101-PO-11132511	Sale	1	123430	64GB EVO V5 NANA microSDXC Class 10 / U1 Flash Memory Card with Adapter	1	$10.99	$10.99
+101-PO-11132390	Sale	1	961144	Cloud II Gaming Headset - Black (Refurbished)	1	$62.99	$62.99
+101-PO-11132390	Sale	2	024125	2 Year Replacement Plan	1	$6.99	$6.99
+101-PO-11132378	Sale	1	965731	Maestro Multipurpose Paper; 8.5" x 11" (Letter); 99 Brightness; 20 lb; 500 Sheets	1	$2.49	$2.49
+101-PO-11132259	Sale	1	196071	RT-AC66U B1 AC1750 Dual Band Gigabit Wireless AC Router w/ AiMesh Support	1	$89.99	$89.99
+101-PO-11132243	Sale	1	977751	K556-RK RGB Mechanical Gaming Keyboard - Brown	1	$54.99	$54.99
+101-PO-11132243	Sale	2	059295	PO27 Neptune RGB Gaming Mouse Pad	1	$19.99	$19.99
+101-PO-11132243	Sale	4	023689	2 Year Replacement Plan	1	$1.99	$1.99
+101-PO-11132222	Sale	3	080077	67XL Black Ink Cartridge	1	$24.99	$24.99
+101-PO-11132202	Sale	1	163790	USB 2.0 (Type-A) Male to USB 2.0 (Type-A) Female Extension Cable 6 ft. - Black	1	$14.99	$14.99
+101-PO-11132128	Sale	1	032938	Amplified Indoor HDTV Antenna	1	$24.99	$24.99
+101-PO-11132128	Sale	2	608562	DriveStation DDR 2TB USB 3.1 (Gen 1 Type-A) 3.5" Desktop External Hard Drive - Black	1	$119.99	$119.99
+101-PO-11132123	Sale	1	856393	Wireless Desktop 900 (PT3-00001)	1	$34.99	$34.99
+101-PO-11132064	Sale	1	998120	MX Keys Wireless Keyboard - Black	1	$99.99	$99.99
+101-PO-11132030	Sale	2	078402	1/4 Watt 1% Resistors - 610 Pack	1	$9.99	$9.99
+101-PO-11132030	Sale	3	320010	Carbon Activated Filter with PVC Bag - 3 Pack	1	$6.49	$6.49
+101-PO-11132030	Sale	4	900902	Pi Kit Deluxe Parts Pack	1	$19.99	$19.99
+101-PO-11132030	Sale	5	825950	CPUAC600 Universal Power Adapter	1	$17.99	$17.99
+101-PO-11132030	Sale	6	989392	1.75mm Gray PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+101-PO-11132030	Sale	7	590497	3 Terminal Adjustable Positive Voltage Regulator	1	$2.79	$2.79
+101-PO-11132030	Sale	8	836908	NTE960 Integrated Circuit - 3-Terminal Positive Voltage Regulator 5V	1	$1.99	$1.99
+101-PO-11132030	Sale	9	634378	400 Volt 1 Amp General Purpose Diode	1	$1.99	$1.99
+101-PO-11132030	Sale	10	758110	Mini 8-Way SP8T Rotary Selector Switch	1	$1.95	$1.95
+101-PO-11132007	Sale	3	022558	Yeti USB Microphone for Recording & Streaming, 3 Condenser Capsules, Adjustable Stand, Plug & Play - Black	1	$129.99	$129.99
+101-PO-11132000	Sale	1	022574	Yeti USB Microphone for Recording & Streaming, 3 Condenser Capsules, Adjustable Stand, Plug & Play - Blue	1	$129.99	$129.99
+101-PO-11131984	Sale	2	402461	USB 2.0 (Type-A) Male to USB 2.0 (Type-C) Male Cable 6.56 ft. - Black	1	$10.99	$10.99
+101-PO-11131984	Sale	3	052712	Model D Gaming Mouse - Matte White	1	$49.99	$49.99
+101-PO-11131981	Sale	1	147496	ROG Sheath Extra-Large Gaming Mouse Pad - Electro Punk	1	$29.99	$29.99
+101-PO-11131981	Sale	3	208124	Gaming Headphone Holder Headset Hanger Mount - Headphones Stand	1	$14.99	$14.99
+101-PO-11131941	Sale	1	194472	G413 Backlit Mechanical Gaming Keyboard Refurbished Silver - Romer-G Tactile	1	$49.99	$49.99
+101-PO-11131936	Sale	2	333351	CP350COM Standby Series 350VA/255W 6-Outlet UPS	1	$39.99	$39.99
+101-PO-11131896	Sale	1	961144	Cloud II Gaming Headset - Black (Refurbished)	1	$62.99	$62.99
+101-PO-11131896	Sale	2	024125	2 Year Replacement Plan	1	$6.99	$6.99
+101-PO-11131878	Sale	1	160697	GSP 370 EPOS Wireless Gaming Headset - Black	1	$199.00	$199.00
+101-PO-11131878	Sale	2	024364	2 Year Replacement Plan	1	$19.99	$19.99
+101-PO-11131801	Sale	2	398495	6-Button Wireless Mouse - Red	1	$7.99	$7.99
+101-PO-11131801	Sale	3	997874	USB Type-C 3.1 to Type-A Adapter - 2 Pack	1	$10.99	$10.99
+101-RE-11131772	Exchange	1	438416	Micro-HDMI Male to HDMI Female Digital A/V HD Camera Conversion Cable	-1	($14.99)	($14.99)
+101-PO-11131729	Sale	1	438416	Micro-HDMI Male to HDMI Female Digital A/V HD Camera Conversion Cable	1	$14.99	$14.99
+101-PO-11131719	Sale	1	740357	1-Meter USB-C to USB-A SuperSpeed 5Gbps 3Amp Cable (CC2231A-1M)	1	$19.99	$19.99
+101-PO-11131699	Sale	1	052704	Model D Gaming Mouse - Matte Black	1	$49.99	$49.99
+101-PO-11131699	Sale	2	937011	ASSIST XL Cloth Mouse Mat - Nero	1	$14.99	$14.99
+101-PO-11131523	Sale	1	161349	BOOST CHARGE Lightning to USB-A Charge/ Sync Cable 6.6 ft. 2 Pack - White	1	$19.99	$19.99
+101-PO-11131472	Sale	1	916353	PCE-AC58BT AC2100 Wireless Adapter	1	$44.99	$44.99
+101-PO-11131469	Sale	2	190694	Game Capture HD60 S+	1	$194.99	$194.99
+101-PO-11131464	Sale	1	862318	BarraCuda 2TB 7200RPM SATA III 6Gb/s 3.5" Internal Hard Drive	1	$54.99	$54.99
+101-PO-11131464	Sale	2	916353	PCE-AC58BT AC2100 Wireless Adapter	1	$44.99	$44.99
+101-PO-11131462	Sale	3	816769	G502 HERO Gaming Mouse	1	$49.99	$49.99
+101-PO-11131462	Sale	4	162206	K55 RGB Gaming Keyboard - Quiet & Satisfying LED Backlit Keys - Media Controls - Wrist Rest Included – Onboard Macro Recording	1	$49.99	$49.99
+101-PO-11131458	Sale	6	010561	Motorized Height-Adjustable Gaming Desk	1	$499.99	$499.99
+101-PO-11131430	Sale	1	991075	Soldering Tool Kit - ETL Approved	1	$14.99	$14.99
+101-PO-11131428	Sale	2	109157	Cloud Stinger Core Wireless 7.1 Gaming Headset for PC - Black	1	$79.99	$79.99
+101-PO-11131409	Sale	3	163162	FireWire 400 (6-Pin) Male to FireWire 400 (6-Pin) Male Cable 10 ft. - Black	1	$17.99	$17.99
+101-PO-11131409	Sale	4	568170	Mini-Din 4-Pin Male to Mini-Din 4-Pin Male Digital Cable 6 ft. - Black	1	$9.99	$9.99
+101-PO-11131409	Sale	6	460980	Composite/ Mini-Din 4-Pin Female to 4K HDMI Converter	1	$129.99	$129.99
+101-PO-11131365	Sale	1	268003	TOSLINK Male to TOSLINK Male Digital Optical Audio Cable 6 ft. - Black	1	$11.99	$11.99
+101-PO-11131351	Sale	1	037499	5,200 USB-A Power Bank - Silver	1	$0.01	$0.01
+101-PO-11131343	Sale	2	417386	u-Click PS/2 Optical Mouse Black	1	$7.99	$7.99
+101-PO-11131328	Sale	1	984062	Expert Mouse - Wireless Trackball	1	$109.99	$109.99
+101-PO-11131328	Sale	2	925404	Graphic Card Anti-sag Bracket	1	$7.99	$7.99
+1
+100
+items per page
+©2021 Micro Electronics, Inc.

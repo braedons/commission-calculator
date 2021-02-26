@@ -1,0 +1,142 @@
+Order History logoOrder History
+esexton [ Log off ]
+Sales Lookup - 2/18/2021
+Date
+2/18/2021
+Store
+101 - Tustin
+Sales Person
+safshari
+Cashier/CSR
+ 
+Details assigned to safshari on 2/18/2021
+ 
+Units
+Revenue
+Attach %
+ASP
+Revenue Per Unit
+Customers Served: 33	 	$8,429.98	 	 	$298.48
+Computers Sold	0	$0.00		$0.00	
+Service Plans Sold	5	$596.95	7.08 %	$119.39	$298.48
+ESET Sold	0	$0.00	0.00 %	$0.00	$0.00
+Office Sold	0	$0.00	0.00 %	$0.00	$0.00
+Monitors	0	$0.00	0.00 %	$0.00	$0.00
+Nord VPN	0	$0.00	0.00 %	$0.00	$0.00
+Processors Sales	0	$0.00		$0.00	
+Processor Attach	0	$0.00			$0.00
+Custom Builds	0	$0.00	0.00 %	$0.00	
+Custom Build Service Plan	0	$0.00	0.00 %	$0.00	
+Micro Center Insider Card		$312.95	3.71 %		
+Transaction Number
+Sale Type
+Line
+Sku
+Description
+Qty
+Unit Price
+Total
+ 	 	 	 	 	 	 	Total: $8,429.98
+101-PO-11138180	Sale	2	159160	Alloy Origins Core Tenkeyless Mechanical Gaming Keyboard - HyperX Aqua	1	$89.99	$89.99
+101-PO-11138171	Sale	1	188029	WorkEZ Professional Ergonomic Stand	1	$49.99	$49.99
+101-PO-11138147	Sale	1	331223	GigaExpress 10/100/1000 PCI Gigabit Desktop Adapter	1	$16.99	$16.99
+101-PO-11138118	Sale	1	407460	1.75mm Pink PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11138118	Sale	2	407460	1.75mm Pink PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11138118	Sale	3	407478	1.75mm Peak Neon Green PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11138114	Sale	1	456889	Silent Wireless Mouse - Graphite	1	$12.99	$12.99
+101-PO-11138114	Sale	2	203778	ERGO M575 Wireless Trackball - Black	1	$49.99	$49.99
+101-PO-11138114	Sale	3	309526	RE305 AC1200 Dual-Band Wireless Range Extender	1	$49.99	$49.99
+101-PO-11138114	Sale	4	932202	1.75mm UV Color Changing (Natural to Red) PLA 3D Printer Filament - 0.5kg Spool (1.1 lbs)	1	$17.99	$17.99
+101-PO-11138114	Sale	5	407452	1.75mm Black PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11138109	Sale	1	935544	4K @ 30Hz 2-Port HDMI Splitter	1	$39.99	$39.99
+101-PO-11138052	Sale	1	903062	Galaxy Tab A - Silver; 10.1" 1920 x 1200 IPS LCD Display; Samsung Exynos 1.8GHz Octa-Core CPU; 2GB RAM & 32GB Storage; Android 9.0	1	$160.96	$160.96
+101-PO-11138052	Sale	4	793760	1 Year Accidental Damage Protection Plan	1	$39.99	$39.99
+101-PO-11138046	Sale	1	189779	Official Voice Remote for Roku Players and Roku TVs	1	$19.99	$19.99
+101-PO-11138035	Sale	1	280313	G Saitek PRO Flight Yoke System	1	$169.99	$169.99
+101-PO-11138035	Sale	2	024364	2 Year Replacement Plan	1	$19.99	$19.99
+101-PO-11138035	Sale	3	280321	Pro Flight Rudder Pedals	1	$169.99	$169.99
+101-PO-11138035	Sale	4	024364	2 Year Replacement Plan	1	$19.99	$19.99
+101-PO-11138001	Sale	1	856393	Wireless Desktop 900 Keyboard & Mouse Combo	1	$34.99	$34.99
+101-PO-11137997	Sale	1	421446	Zero v1.3 Development Board - Camera Ready	1	$4.99	$4.99
+101-PO-11137997	Sale	2	422659	Zero W	1	$9.99	$9.99
+101-PO-11137969	Sale	1	998039	USB 3.1 (Gen 1 Type-A) Male to HDMI Female Display Adapter 3.1 in. - White	1	$39.99	$39.99
+101-PO-11137969	Sale	2	112821	CE-Link HDMI Male to Micro HDMI Male Video Cable 10 ft. - Black	1	$19.99	$19.99
+101-PO-11137945	Sale	1	095554	RT-AX3000 AX3000 Dual Band Gigabit Wireless AX Router - w/ AiMesh Support	1	$159.99	$159.99
+101-PO-11137937	Sale	1	434860	TL-SG1005D 5-Port Gigabit Desktop Switch	1	$15.99	$15.99
+101-PO-11137937	Sale	4	095554	RT-AX3000 AX3000 Dual Band Gigabit Wireless AX Router - w/ AiMesh Support	1	$159.99	$159.99
+101-PO-11137930	Sale	2	095554	RT-AX3000 AX3000 Dual Band Gigabit Wireless AX Router - w/ AiMesh Support	1	$159.99	$159.99
+101-PO-11137700	Sale	3	040493	Nest AC2200 Dual-Band Whole Home Gigabit Wireless AC Router + 2 x Points - Snow	1	$349.99	$349.99
+101-PO-11137674	Sale	3	151902	1.75mm Black TPU-95A 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$24.99	$24.99
+101-PO-11137674	Sale	4	989269	1.75mm Black PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+101-PO-11137674	Sale	5	989269	1.75mm Black PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+101-PO-11137632	Sale	1	797811	Grip Clip Vent Mount Phone Holder w/Qi Wireless Charging - Black	1	$49.99	$49.99
+101-PO-11137632	Sale	2	111450	Security Floodlight Camera; Outdoor; 1080p Resolution; 30 ft. IR Range; WiFi Connectivity; AC Powered	2	$179.99	$359.98
+101-PO-11137611	Sale	1	627380	ProSafe FS728TP 24-Port 10/100 Smart Switch with Power Over Ethernet (PoE)	1	$329.99	$329.99
+101-PO-11137611	Sale	3	613844	ProSafe Plus GS108E 8-Port 10/100/1000 Gigabit Ethernet Switch	1	$61.99	$61.99
+101-PO-11137567	Sale	1	186734	Apple Gift Card - 25$	1	$25.00	$25.00
+101-PO-11137567	Sale	4	174649	16GB Snow Edition USB 2.0 Flash Drive Blue	1	$3.99	$3.99
+101-PO-11137527	Sale	1	418806	USB 3.0 Dual SD 4-Slot Card Reader	1	$10.99	$10.99
+101-PO-11137527	Sale	3	170621	DR.HEAL Disinfecting Alcohol Wipes 6" x 7" 50 Count	1	$5.99	$5.99
+101-PO-11137527	Sale	4	170621	DR.HEAL Disinfecting Alcohol Wipes 6" x 7" 50 Count	1	$5.99	$5.99
+101-PO-11137527	Sale	5	197624	15 ft. Three Angle Outlet 3-Prong Power Extension Cord	1	$18.99	$18.99
+101-PO-11137527	Sale	6	222083	SurgeArrest Essential PE63 6-Outlet Surge Protector w/ 3 ft. Cord	1	$10.99	$10.99
+101-PO-11137527	Sale	7	957720	25 ft. Extension Cord - Black	1	$19.99	$19.99
+101-PO-11137527	Sale	8	957720	25 ft. Extension Cord - Black	1	$19.99	$19.99
+101-PO-11137527	Sale	9	100248	Essential SurgeArrest 3 Outlet Wall Tap with 5V, 3.4A 2 Port USB Charger	1	$13.99	$13.99
+101-PO-11137527	Sale	10	110379	Soldering Helping Hand with LED Magnifier	1	$34.98	$34.98
+101-PO-11137527	Sale	11	407452	1.75mm Black PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11137527	Sale	12	407569	1.75mm Gold PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11137527	Sale	13	187203	R1280DB 2.0 Powered Bookshelf Speaker System - Wood	1	$129.99	$129.99
+101-PO-11137519	Sale	1	018176	BN650M1 650VA Back-UPS w/ 7 Outlets & 1 USB Port	1	$49.99	$49.99
+101-PO-11137519	Sale	2	995555	HP4500B 360 Bluetooth Headphones - Black	1	$0.01	$0.01
+101-PO-11137468	Sale	1	905976	63XL High Yield Black Ink Cartridge	1	$41.99	$41.99
+101-PO-11137468	Sale	2	035816	Bluetooth Hands-Free Car Kit	1	$34.98	$34.98
+101-PO-11137458	Sale	1	401323	7-Port Powered USB Hub	1	$33.99	$33.99
+101-PO-11137444	Sale	1	448084	USB 3.1 (Gen 1 Type-A) Male to Micro-USB (Type-B) Male Cable 3 ft. - Black	1	$17.99	$17.99
+101-PO-11137434	Sale	1	072066	UniFi AC Mesh Dual Band Indoor/Outdoor Access Point	2	$94.99	$189.98
+101-PO-11137367	Sale	1	211847	SDRW-08D2S-U/BK USB 2.0 External Slim DVD Burner	1	$24.99	$24.99
+101-PO-11137366	Sale	6	208819	Echo (4th Gen) With Alexa - Charcoal	1	$119.99	$119.99
+101-PO-11137366	Sale	7	799148	Large Universal Remote Control	1	$9.99	$9.99
+101-PO-11137366	Sale	8	996793	JCC153 USB-C to 4K HDMI Cable 5 ft.- White	1	$29.99	$29.99
+101-PO-11137366	Sale	9	413500	HDMI Male to HDMI Male 24k Gold Plated High Speed Cable with Ethernet 15 ft. - Black	1	$24.99	$24.99
+101-WP-11137363	Sale	2	142257	10-Port Gigabit Desktop Switch w/ 8-Port PoE+	1	$79.99	$79.99
+101-PO-11137345	Sale	3	296863	Universal Tripod Mount for Tablets	1	$15.99	$15.99
+101-PO-11137345	Sale	4	767970	GripTight ONE Mount - Black	1	$19.99	$19.99
+101-PO-11137345	Sale	5	166389	GM200 Gaming Stream Condenser Microphone	1	$39.99	$39.99
+101-PO-11137276	Sale	1	418491	AV600 Nano Powerline Adapter Starter Kit	1	$39.99	$39.99
+101-PO-11137230	Sale	1	413500	HDMI Male to HDMI Male 24k Gold Plated High Speed Cable with Ethernet 15 ft. - Black	1	$24.99	$24.99
+101-PO-11137185	Sale	2	889949	C920S Pro HD Webcam - Black	1	$69.99	$69.99
+101-PO-11137177	Sale	1	457465	2 plus 1 Line Link to Cell Phone	1	$149.99	$149.99
+101-PO-11137177	Sale	3	715474	1.75mm White PETG 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$20.99	$20.99
+101-PO-11137177	Sale	4	989426	1.75mm White PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+101-PO-11137177	Sale	5	407551	1.75mm White PLA 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$17.99	$17.99
+101-PO-11137177	Sale	8	964452	TAZ Workhorse 3D Printer	1	$2,950.00	$2,950.00
+101-PO-11137177	Sale	9	443218	2 Year Extension Protection Plan	1	$499.99	$499.99
+101-PO-11137126	Sale	1	989012	1.75mm True Red PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+101-PO-11137105	Sale	1	718130	No-Clean Flux Core Solder Sn63/Pb37 - 2 Ounce Spool	1	$6.99	$6.99
+101-PO-11137101	Sale	2	104786	FastCrimp Cat6 RJ45 Modular Connectors 100 Pack	1	$45.99	$45.99
+101-PO-11137101	Sale	3	413708	CAT 6 Bulk Cable 250 ft. - Black	1	$44.99	$44.99
+101-PO-11137101	Sale	4	777151	Network Service Kit	1	$34.99	$34.99
+101-PO-11137068	Sale	1	502385	CAT 6 Snagless Network Cable 25 ft. - Black	1	$22.99	$22.99
+101-PO-11137057	Sale	1	414151	Mini DisplayPort Male to HDMI Female/ VGA Female Adapter	1	$14.99	$14.99
+101-PO-11137057	Sale	2	079491	Mini DisplayPort 1.2 Male to HDMI Male Video Adapter Cable 6 ft. - White	4	$17.99	$71.96
+101-PO-11137050	Sale	3	288589	G413 Mechanical Gaming Keyboard - Romer-G Tactile	1	$69.99	$69.99
+101-PO-11137050	Sale	4	024125	2 Year Replacement Plan	1	$6.99	$6.99
+101-PO-11137031	Sale	1	971077	Pro Wired Gaming Headset - Black	1	$99.99	$99.99
+101-PO-11137031	Sale	3	081455	Agility GD30 Large Gaming Mouse Pad	1	$21.99	$21.99
+101-PO-11137015	Sale	1	422659	Zero W	1	$0.01	$0.01
+101-RE-11136997	Exchange	1	196071	RT-AC66U B1 AC1750 Dual Band Gigabit Wireless AC Router w/ AiMesh Support	-1	($89.99)	($89.99)
+101-RE-11136997	Exchange	1	872689	RT-AC68U AC1900 Dual Band Gigabit Wireless AC Router - w/ AiMesh Support	1	$129.99	$129.99
+101-RE-11136997	Exchange	2	024158	2 Year Replacement Plan	-1	($9.99)	($9.99)
+101-RE-11136997	Exchange	2	024364	2 Year Replacement Plan	1	$19.99	$19.99
+101-PO-11136795	Sale	4	418079	USB 2.0 (Type-A) Male to (Type-A) Female Extension Cable 10 ft. - Black	1	$19.99	$19.99
+101-PO-11136759	Sale	1	072058	NanoStationM NSM5 Wireless Access Point	1	$71.96	$71.96
+101-PO-11136759	Sale	4	880211	AC1200 Wireless Indoor/Outdoor Access Point	1	$79.99	$79.99
+101-PO-11136759	Sale	5	058347	TEG1105P 5 Port Unmanaged Gigabit POE Switch	1	$39.99	$39.99
+101-PO-11136718	Sale	2	277194	RJ-11 Male to RJ-11 Male Telephone Cord 7ft. - White	1	$6.99	$6.99
+101-PO-11136718	Sale	3	277194	RJ-11 Male to RJ-11 Male Telephone Cord 7ft. - White	1	$6.99	$6.99
+101-PO-11136718	Sale	4	277194	RJ-11 Male to RJ-11 Male Telephone Cord 7ft. - White	1	$6.99	$6.99
+1
+100
+items per page
+©2021 Micro Electronics, Inc.

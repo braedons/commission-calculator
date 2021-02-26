@@ -1,6 +1,6 @@
 import tkinter as tk
 import tkinter.messagebox
-import tktable
+from table import Table
 from math import inf
 from sys import exc_info
 
@@ -131,19 +131,19 @@ def update_results(text_in, deductions_ents, results_lbls, bucket_breakdown_tbl,
 		# Update breakdown table
 		# Commission row
 		bucket_commissions = stats.calc_bucket_commissions()
-		for i in range(3): bucket_breakdown_tbl.set('row', f'1,{i+1}', f'${round(bucket_commissions[i], 2)}')
-		bucket_breakdown_tbl.set('row', '1,4', f'${round(stats.calc_out_of_dept_commission(), 2)}')
-		bucket_breakdown_tbl.set('row', '1,5', f'${round(stats.calc_service_plan_commission(), 2)}')
+		for i in range(3): bucket_breakdown_tbl.set('row', (1,i+1), f'${round(bucket_commissions[i], 2)}')
+		bucket_breakdown_tbl.set('row', (1,4), f'${round(stats.calc_out_of_dept_commission(), 2)}')
+		bucket_breakdown_tbl.set('row', (1,5), f'${round(stats.calc_service_plan_commission(), 2)}')
 
 		# Sales row
-		for i in range(3): bucket_breakdown_tbl.set('row', f'2,{i+1}', f'${round(stats.bucket_totals[i], 2)}')
-		bucket_breakdown_tbl.set('row', '2,4', f'${round(stats.out_of_dept_total, 2)}')
-		bucket_breakdown_tbl.set('row', '2,5', f'${round(stats.service_plan_total, 2)}')
+		for i in range(3): bucket_breakdown_tbl.set('row', (2,i+1), f'${round(stats.bucket_totals[i], 2)}')
+		bucket_breakdown_tbl.set('row', (2,4), f'${round(stats.out_of_dept_total, 2)}')
+		bucket_breakdown_tbl.set('row', (2,5), f'${round(stats.service_plan_total, 2)}')
 
 		# % total sales row
-		for i in range(3): bucket_breakdown_tbl.set('row', f'3,{i+1}', f'{(round(stats.bucket_totals[i] / sales_total * 100, 2) if sales_total else 0)}%')
-		bucket_breakdown_tbl.set('row', '3,4', f'{(round(stats.out_of_dept_total / sales_total * 100, 2) if sales_total else 0)}%')
-		bucket_breakdown_tbl.set('row', '3,5', f'{(round(stats.service_plan_total / sales_total * 100, 2) if sales_total else 0)}%')
+		for i in range(3): bucket_breakdown_tbl.set('row', (3,i+1), f'{(round(stats.bucket_totals[i] / sales_total * 100, 2) if sales_total else 0)}%')
+		bucket_breakdown_tbl.set('row', (3,4), f'{(round(stats.out_of_dept_total / sales_total * 100, 2) if sales_total else 0)}%')
+		bucket_breakdown_tbl.set('row', (3,5), f'{(round(stats.service_plan_total / sales_total * 100, 2) if sales_total else 0)}%')
 	except Exception as e:
 		print_exception(e)
 
@@ -154,7 +154,7 @@ def clear(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl,
 		for lbl in results_lbls.values(): lbl['text'] = ''
 
 		# TODO: clear table
-		for r in range(1, len(BUCKET_BREAKDOWN_ROWS)+1): bucket_breakdown_tbl.set(f'row', f'{r},1', *[''] * len(BUCKET_BREAKDOWN_COLS))
+		for r in range(1, len(BUCKET_BREAKDOWN_ROWS)+1): bucket_breakdown_tbl.set(f'row', (r,1), *[''] * len(BUCKET_BREAKDOWN_COLS))
 
 		stats.clear()
 	except Exception as e:
@@ -229,16 +229,13 @@ if __name__ == '__main__':
 	results_lbls['overall_rate_lbl'] = tk.Label(master=results_frame)
 
 	# Creating results table broken down by bucket
-	bucket_breakdown_tbl = tktable.Table(master=window, cols=len(BUCKET_BREAKDOWN_COLS)+1, rows=len(BUCKET_BREAKDOWN_ROWS)+1, colwidth=12)
-	bucket_breakdown_tbl['variable'] = tktable.ArrayVar(window)
+	bucket_breakdown_tbl = Table(master=window, ncols=len(BUCKET_BREAKDOWN_COLS)+1, nrows=len(BUCKET_BREAKDOWN_ROWS)+1, colwidth=12)
 
-	bucket_breakdown_tbl.set('row', '0,1', *BUCKET_BREAKDOWN_COLS)
-	bucket_breakdown_tbl.set('col', '1,0', *BUCKET_BREAKDOWN_ROWS)
+	bucket_breakdown_tbl.set('row', (0,1), *BUCKET_BREAKDOWN_COLS)
+	bucket_breakdown_tbl.set('col', (1,0), *BUCKET_BREAKDOWN_ROWS)
 
-	bucket_breakdown_tbl.tag_row('header', 0)
-	bucket_breakdown_tbl.tag_col('header', 0)
-	bucket_breakdown_tbl.tag_configure('header', background='grey')
-	bucket_breakdown_tbl.tag_configure('header', foreground='white')
+	bucket_breakdown_tbl.set_colours('row', (0,1), 'white', 'grey')
+	bucket_breakdown_tbl.set_colours('col', (1,0), 'white', 'grey')
 	
 	for lbl in results_lbls.values(): lbl.pack()
 

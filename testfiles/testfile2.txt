@@ -1,0 +1,207 @@
+Order History logoOrder History
+esexton [ Log off ]
+Sales Lookup - 2/5/2021
+Date
+2/5/2021
+Store
+101 - Tustin
+Sales Person
+esexton
+Cashier/CSR
+ 
+Details assigned to esexton on 2/5/2021
+ 
+Units
+Revenue
+Attach %
+ASP
+Revenue Per Unit
+Customers Served: 53	 	$5,754.95	 	 	$93.95
+Computers Sold	0	$0.00		$0.00	
+Service Plans Sold	5	$93.95	1.63 %	$18.79	$93.95
+ESET Sold	0	$0.00	0.00 %	$0.00	$0.00
+Office Sold	0	$0.00	0.00 %	$0.00	$0.00
+Monitors	0	$0.00	0.00 %	$0.00	$0.00
+Nord VPN	0	$0.00	0.00 %	$0.00	$0.00
+Processors Sales	0	$0.00		$0.00	
+Processor Attach	0	$0.00			$0.00
+Custom Builds	0	$0.00	0.00 %	$0.00	
+Custom Build Service Plan	0	$0.00	0.00 %	$0.00	
+Micro Center Insider Card		$347.93	6.05 %		
+Transaction Number
+Sale Type
+Line
+Sku
+Description
+Qty
+Unit Price
+Total
+ 	 	 	 	 	 	 	Total: $5,754.95
+101-PO-11115269	Sale	1	153403	LU734 Gaming Keyboard	1	$19.99	$19.99
+101-PO-11115191	Sale	1	096099	Quantum 200 Gaming Headset - Black	1	$54.99	$54.99
+101-PO-11115191	Sale	2	024125	2 Year Replacement Plan	1	$6.99	$6.99
+101-PO-11115190	Sale	7	424291	USB Optical Mouse - Red	1	$4.99	$4.99
+101-PO-11115190	Sale	8	424283	USB Optical Mouse - Blue	1	$4.99	$4.99
+101-PO-11115158	Sale	1	965731	Maestro Multipurpose Paper; 8.5" x 11" (Letter); 99 Brightness; 20 lb; 500 Sheets	1	$2.49	$2.49
+101-PO-11115158	Sale	2	078014	ERGO K860 Split Ergonomic Wireless Keyboard	1	$129.99	$129.99
+101-PO-11115148	Sale	2	422659	Zero W	1	$0.01	$0.01
+101-PO-11115146	Sale	3	495432	CAT 6 Snagless Network Cable 7 ft. - Black	1	$9.99	$9.99
+101-PO-11115132	Sale	1	771964	MX ERGO Advanced Wireless Trackball	1	$99.99	$99.99
+101-PO-11115120	Sale	1	993501	My Passport 5TB USB 3.2 (Gen 1 Type-A) 2.5" Portable External Hard Drive - Black	1	$109.99	$109.99
+101-PO-11115120	Sale	2	993337	Purple Surveillance 10TB 5400RPM SATA III 6Gb/s 3.5" Internal Hard Drive	1	$309.99	$309.99
+101-PO-11115100	Sale	2	672709	TN730 Black Toner Cartridge	1	$47.99	$47.99
+101-PO-11115070	Sale	1	429076	MasterWatt 650 Watt 80 Plus Bronze ATX Semi-Modular Power Supply	1	$84.99	$84.99
+101-PO-11115070	Sale	2	071548	G513 Carbon LIGHTSYNC RGB Mechanical Gaming Keyboard - GX Brown (Tactile)	1	$139.99	$139.99
+101-PO-11115070	Sale	3	024364	2 Year Replacement Plan	1	$19.99	$19.99
+101-PO-11115070	Sale	4	030742	X470 GAMING PLUS MAX AMD ATX AM4 Motherboard	1	$119.99	$119.99
+101-PO-11115052	Sale	1	932020	LaserJet Pro M404N Printer	1	$269.99	$269.99
+101-PO-11115052	Sale	2	995555	HP4500B 360 Bluetooth Headphones - Black	1	$0.01	$0.01
+101-PO-11115035	Sale	1	212225	Wireless Noise-Cancelling Headphones - Black	1	$59.99	$59.99
+101-PO-11115035	Sale	2	024125	2 Year Replacement Plan	1	$6.99	$6.99
+101-PO-11115016	Sale	1	021303	HDMI Male to HDMI Male Ultra High Speed UltraHD 8K Video Cable w/ Ethernet 9.8 ft. - Black	1	$34.99	$34.99
+101-PO-11115001	Sale	1	738773	High Powered Amplified Motorized Outdoor Antenna Suitable for HDTV and ATSC Digital Television	1	$29.99	$29.99
+101-PO-11114988	Sale	2	837237	Instant Set Epoxy Single Use	1	$1.99	$1.99
+101-PO-11114972	Sale	1	932533	Hue White Ambiance Add-On Light Bulb	1	$14.99	$14.99
+101-PO-11114966	Sale	1	099788	4 Model B - 8GB DDR4	1	$69.99	$69.99
+101-PO-11114966	Sale	2	950113	4 Official Case - Red/White	1	$4.99	$4.99
+101-PO-11114949	Sale	1	109157	Cloud Stinger Core Wireless 7.1 Gaming Headset for PC - Black	1	$79.99	$79.99
+101-PO-11114929	Sale	1	401497	DisplayPort Male to DisplayPort Male Cable 12 ft. - Black	1	$17.99	$17.99
+101-PO-11114929	Sale	2	964437	HDMI Male to HDMI Male High Speed 8K UltraHD Cable w/ Ethernet 6.6 ft. - Black	1	$24.99	$24.99
+101-PO-11114929	Sale	3	414136	6 Outlet Surge Protector 201 Joules w/ 2 ft. Cord - White	1	$3.99	$3.99
+101-PO-11114929	Sale	4	414136	6 Outlet Surge Protector 201 Joules w/ 2 ft. Cord - White	1	$3.99	$3.99
+101-PO-11114918	Sale	1	198168	MK235 Wireless Keyboard & Mouse Combo - Gray	1	$22.99	$22.99
+101-PO-11114913	Sale	1	946681	HDMI Male to HDMI Male High Speed UltraHD Cable w/ Ethernet 3 ft. - Black	1	$12.99	$12.99
+101-PO-11114911	Sale	1	974279	4 Model B Official Desktop Kit	1	$74.99	$74.99
+101-PO-11114889	Sale	1	162586	Quest 2 Elite Strap for Enhanced Support and Comfort in VR	1	$49.99	$49.99
+101-PO-11114889	Sale	2	162438	Quest 2 - Advanced All-In-One Virtual Reality Headset - 64 GB	1	$299.99	$299.99
+101-PO-11114889	Sale	3	021766	1 Year Accidental Damage Protection Plan	1	$49.99	$49.99
+101-PO-11114887	Sale	1	763615	Mahi Driver Kit - 48 Driver Kit	1	$34.99	$34.99
+101-PO-11114881	Sale	3	936997	ASSIST XL Gaming Mouse Pad - Stealth	1	$14.99	$14.99
+101-PO-11114881	Sale	5	937011	ASSIST XL Cloth Mouse Mat - Nero	1	$14.99	$14.99
+101-PO-11114881	Sale	6	268375	Elements 2TB USB 3.1 (Gen 1 Type-A) 2.5" Portable External Hard Drive - Black	1	$62.99	$62.99
+101-PO-11114876	Sale	3	816777	PRO Wireless Gaming Mouse	1	$129.99	$129.99
+101-PO-11114876	Sale	4	028175	Glorious Extended Gaming Mouse Pad - Stealth Edition	2	$25.99	$51.98
+101-PO-11114806	Sale	1	974493	UniFi AC Lite Access Point	1	$82.99	$82.99
+101-PO-11114782	Sale	3	127035	K589 Shrapnel RGB Low Profile Mechanical Gaming Keyboard - Blue Switches	1	$54.99	$54.99
+101-PO-11114682	Sale	4	136622	Ender 3 Pro Upgrade Silent Motherboard V1.1.5	1	$49.99	$49.99
+101-RE-11114660	Return	2	087320	4 Model B - 2GB DDR4	-1	($55.00)	($55.00)
+101-RE-11114660	Return	3	087320	4 Model B - 2GB DDR4	-1	($55.00)	($55.00)
+101-PO-11114659	Sale	4	115642	Tri-Vision USB 1080p High Definition Web Camera	1	$29.99	$29.99
+101-RE-11114640	Exchange	2	675447	Neon Party Case for MacBook Pro 13" with Touch Bar - Clear	-1	($25.99)	($25.99)
+101-PO-11114612	Sale	1	501858	CAT 6 Snagless Network Cable 14 ft. - Black	1	$16.99	$16.99
+101-PO-11114612	Sale	2	650846	TL-SG108 8-Port 10/100/1000 Gigabit Desktop Switch	1	$19.99	$19.99
+101-PO-11114595	Sale	1	726265	Max AAA Alkaline Battery - 16 pack	1	$11.99	$11.99
+101-PO-11114576	Sale	1	130609	DWA-181-US AC1300 Dual Band MU-MIMO Wi-Fi Nano USB Adapter	1	$37.99	$37.99
+101-PO-11114557	Sale	1	841940	TN-223BK Black Toner Cartridge	1	$62.99	$62.99
+101-PO-11114557	Sale	2	837831	TN-223C Cyan Toner Cartridge	1	$79.99	$79.99
+101-PO-11114557	Sale	3	837815	TN-223Y Yellow Toner Cartridge	1	$79.99	$79.99
+101-PO-11114557	Sale	4	837823	TN-223M Magenta Toner Cartridge	1	$79.99	$79.99
+101-PO-11114557	Sale	5	837906	MFC-L3770CDW Compact Digital Color All-in-One Printer	1	$399.99	$399.99
+101-PO-11114549	Sale	1	021824	DisplayPort Male to DisplayPort Male 4K UltraHD Video Cable w/ Latches 6 ft. - Black	1	$17.99	$17.99
+101-PO-11114549	Sale	3	438374	CleanScreen Value Kit	1	$9.99	$9.99
+101-PO-11114549	Sale	6	376079	Devastator 3 Gaming Keyboard & Mouse Combo, 7 Color Mode LED Backlit, Media Keys, 4 DPI Settings	1	$39.99	$39.99
+101-PO-11114523	Sale	1	196071	RT-AC66U B1 AC1750 Dual Band Gigabit Wireless AC Router w/ AiMesh Support	2	$89.99	$179.98
+101-PO-11114523	Sale	2	024158	2 Year Replacement Plan	1	$9.99	$9.99
+101-PO-11114523	Sale	3	503094	CAT 6 Molded Boots Network Cable 7 ft. - Blue	1	$9.99	$9.99
+101-PO-11114523	Sale	4	479741	CAT 5e Snagless Network Cable 7 ft. - Yellow	1	$7.99	$7.99
+101-PO-11114514	Sale	3	675447	Neon Party Case for MacBook Pro 13" with Touch Bar - Clear	1	$25.99	$25.99
+101-PO-11114514	Sale	4	051326	Laptop Sleeve Fits Screens up to 13.3" - Purple	1	$29.99	$29.99
+101-PO-11114462	Sale	5	650846	TL-SG108 8-Port 10/100/1000 Gigabit Desktop Switch	1	$19.99	$19.99
+101-PO-11114462	Sale	6	753533	Cat 6 Network Cable 3 ft. 5 Pack - Blue	1	$14.99	$14.99
+101-PO-11114450	Sale	1	142455	AX3000 Dual Band PCI-E WiFi 6 (802.11ax). Supporting 160MHz, Bluetooth 5.0, WPA3 network security, OFDMA and MU-MIMO	1	$59.99	$59.99
+101-PO-11114415	Sale	1	923938	Visione VX800 Gaming/ Computer Glasses - Black	1	$49.99	$49.99
+101-PO-11114368	Sale	1	198168	MK235 Wireless Keyboard & Mouse Combo - Gray	1	$22.99	$22.99
+101-PO-11114322	Sale	1	823732	Office 365 Personal - 1 Year, 1 User	1	$69.99	$69.99
+101-PO-11114322	Sale	6	411439	4 Port USB 3.1 (Gen 1 Type-A) HUB - Black	1	$11.99	$11.99
+101-PO-11114322	Sale	9	121095	Galaga Micro Player	1	$29.99	$29.99
+101-PO-11114322	Sale	10	107987	Coding Critters Bopper, Hip & Hop	1	$39.99	$39.99
+101-PO-11114318	Sale	1	856104	CAT6 RJ45/110 Keystone Jack Blue 5-Pack	1	$12.99	$12.99
+101-PO-11114318	Sale	3	527671	Modular Connectors Gold Plated for Network Cables 10 Pack	1	$4.99	$4.99
+101-PO-11114304	Sale	1	448043	USB 3.1 (Gen 1 Type-A) Male to USB 3.1 (Gen 1 Type-A) Male Cable 3 ft. - Black	1	$17.99	$17.99
+101-PO-11114299	Sale	1	109934	Pro Webcam	1	$129.99	$129.99
+101-PO-11114286	Sale	1	053835	Galactic X	1	$19.99	$19.99
+101-PO-11114260	Sale	1	040535	G604 Lightspeed Wireless Gaming Mouse	1	$84.99	$84.99
+101-PO-11114063	Sale	1	132282	My Book 8TB USB 3.1 (Gen 1 Type-A) 3.5" Desktop External Hard Drive - Black	1	$142.99	$142.99
+101-PO-11114021	Sale	1	071555	G513 Carbon LIGHTSYNC RGB Mechanical Gaming Keyboard - GX Red (Linear)	1	$139.99	$139.99
+101-PO-11114003	Sale	1	126219	Desk-Mounted Broadcast/Podcast Boom Mic Stand	1	$54.99	$54.99
+101-PO-11114003	Sale	2	185009	3.5mm Mini-Stereo Male to Female Speaker Extension Cable	1	$7.99	$7.99
+101-PO-11114001	Sale	1	998120	MX Keys Wireless Keyboard - Black	1	$99.99	$99.99
+101-PO-11114001	Sale	3	016675	M325 Wireless Mouse - Blue	1	$17.99	$17.99
+101-PO-11113998	Sale	1	132308	My Book 6TB USB 3.1 (Gen 1 Type-A) 3.5" Desktop External Hard Drive - Black	1	$104.99	$104.99
+101-PO-11113963	Sale	1	123497	Design Collection Wireless Optical Mouse - Spring Meadow	1	$17.99	$17.99
+101-PO-11113963	Sale	2	820969	3-Port USB 3.0 Type PCIe Host Card	1	$34.99	$34.99
+101-PO-11113950	Sale	2	115642	Tri-Vision USB 1080p High Definition Web Camera	1	$29.99	$29.99
+101-PO-11113944	Sale	1	947705	Road Explorer 5 GPS Navigator - Refurbished	1	$25.59	$25.59
+101-PO-11113937	Sale	1	174698	32GB Snow Edition USB 2.0 Flash Drive Gray	1	$4.49	$4.49
+101-PO-11113922	Sale	1	136150	Ender-3 Hotend Silicon Sock	1	$1.49	$1.49
+101-PO-11113922	Sale	2	135871	Heating Tube Cartridge Heater For Hotend Ender-3 Pro 3D Printer	1	$2.99	$2.99
+101-PO-11113922	Sale	3	136663	CR-10S 400/500 PTFE Filament Guide Tube	1	$3.99	$3.99
+101-PO-11113922	Sale	4	989426	1.75mm White PLA+ 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$18.99	$18.99
+1
+2
+100
+items per page
+©2021 Micro Electronics, Inc.
+
+NEXT PAGE
+
+Order History logoOrder History
+esexton [ Log off ]
+Sales Lookup - 2/5/2021
+Date
+2/5/2021
+Store
+101 - Tustin
+Sales Person
+esexton
+Cashier/CSR
+ 
+Details assigned to esexton on 2/5/2021
+ 
+Units
+Revenue
+Attach %
+ASP
+Revenue Per Unit
+Customers Served: 53	 	$5,754.95	 	 	$93.95
+Computers Sold	0	$0.00		$0.00	
+Service Plans Sold	5	$93.95	1.63 %	$18.79	$93.95
+ESET Sold	0	$0.00	0.00 %	$0.00	$0.00
+Office Sold	0	$0.00	0.00 %	$0.00	$0.00
+Monitors	0	$0.00	0.00 %	$0.00	$0.00
+Nord VPN	0	$0.00	0.00 %	$0.00	$0.00
+Processors Sales	0	$0.00		$0.00	
+Processor Attach	0	$0.00			$0.00
+Custom Builds	0	$0.00	0.00 %	$0.00	
+Custom Build Service Plan	0	$0.00	0.00 %	$0.00	
+Micro Center Insider Card		$347.93	6.05 %		
+Transaction Number
+Sale Type
+Line
+Sku
+Description
+Qty
+Unit Price
+Total
+ 	 	 	 	 	 	 	Total: $5,754.95
+101-PO-11113915	Sale	1	115642	Tri-Vision USB 1080p High Definition Web Camera	1	$29.99	$29.99
+101-PO-11113867	Sale	2	975318	Acrylic Stackable Raspberry Pi 4 Case with Power Adapter and Fan	2	$16.99	$33.98
+101-PO-11113867	Sale	3	099788	4 Model B - 8GB DDR4	2	$69.99	$139.98
+101-PO-11113866	Sale	1	151902	1.75mm Black TPU-95A 3D Printer Filament - 1kg Spool (2.2 lbs)	1	$24.99	$24.99
+101-PO-11113855	Sale	1	076273	Pulse LED Smart Bulb w/ JBL Bluetooth Speaker - Silver	1	$9.99	$9.99
+101-PO-11113855	Sale	2	942359	Sound Module red 4.3 x 4.5 x 1.5 JBLGO2RED	1	$19.99	$19.99
+101-PO-11113816	Sale	1	737155	CD/ DVD Color Slim Cases 100 Pack - Assorted Colors	2	$25.99	$51.98
+101-PO-11113816	Sale	3	170498	BFE 95% Face Mask 3-ply - 50 Pack	1	$9.99	$9.99
+101-PO-11113816	Sale	4	096115	Quantum 800 Wireless Gaming Headset - Black	1	$199.95	$199.95
+101-PO-11113776	Sale	2	226415	Cleaning Wipes - 100 Pack	1	$2.99	$2.99
+101-PO-11113733	Sale	1	708255	MLT-D116S Black Toner Cartridge	1	$40.99	$40.99
+101-PO-11113725	Sale	1	196071	RT-AC66U B1 AC1750 Dual Band Gigabit Wireless AC Router w/ AiMesh Support	1	$89.99	$89.99
+101-RE-11113717	Return	1	782235	Cam Pan Wireless Security Camera; Indoor; 1080p Resolution; 120° FOV; WiFi Connectivity; AC Powered	-1	($34.99)	($34.99)
+101-PO-11113708	Sale	1	148502	Basic Mouse Pad	1	$2.99	$2.99
+101-PO-11113672	Sale	1	422766	5.25V 2.4A Wall Power Supply for Raspberry Pi and Asus Tinker Board	1	$4.99	$4.99
+101-PO-11113664	Sale	1	947093	HDMI Male to HDMI Male UltraHD 4K High Speed Cable w/ Ethernet 1.5 ft. - Black	1	$9.99	$9.99
+1
+2
+100
+items per page
+©2021 Micro Electronics, Inc.
