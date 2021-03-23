@@ -21,6 +21,9 @@ class PersonalStats:
 		self.seen_custs = set()
 		self.deductions = [0] * len(COMMISSION_RATES)
 		self.prev_table = None
+
+		self.returns_count = 0
+		self.returns_totals = [0] * len(COMMISSION_RATES)
 	
 	def clear(self):
 		self.__init__()
@@ -36,11 +39,14 @@ class PersonalStats:
 	def calc_service_plan_commission(self):
 		return self.service_plan_total*SERVICE_PLAN_RATE
 
+	def calc_returns_stats(self):
+		return sum([total*rate for total, rate in zip(self.returns_totals, COMMISSION_RATES)]), sum(self.returns_totals)
+
 	def calculate_commission(self):
 		commission = sum(self.calc_bucket_commissions()) \
 				+ self.calc_out_of_dept_commission() \
 				+ self.calc_service_plan_commission()
-		sales_total = sum(self.bucket_totals) + self.out_of_dept_total + self.service_plan_total
+		sales_total = sum(self.bucket_totals) + self.service_plan_total
 
 		return commission, sales_total
 
@@ -91,6 +97,11 @@ def calc_commission(table, deductions_ents, stats):
 				total = float(item[-1][2:-1].replace(',', '')) # TODO: verify total is ok, qty doesn't matter
 				bucket_index = get_commission_bucket(total)
 				stats.bucket_totals[bucket_index] += total
+			elif item[1] == 'return':
+				total = float(item[-1][2:-1].replace(',', '')) # TODO: verify total is ok, qty doesn't matter
+				bucket_index = get_commission_bucket(total)
+				stats.returns_count += 1 # TODO: add 1 or actual count of returned
+				stats.returns_totals[bucket_index] += total
 
 		stats.prev_table = table
 	
@@ -117,16 +128,21 @@ def count_customers(table, stats):
 	
 	return len(stats.seen_custs)
 
-def update_results(text_in, deductions_ents, results_lbls, bucket_breakdown_tbl, stats):
+def update_results(text_in, deductions_ents, results_lbls, returns_lbls, bucket_breakdown_tbl, stats):
 	try:
 		table = parse_table(text_in)
 		commission, sales_total = calc_commission(table, deductions_ents, stats)
 		n_custs = count_customers(table, stats)
+		returns_commission_lost, returns_total = stats.calc_returns_stats()
 
 		results_lbls['commission_lbl']['text'] = 'Total Commission: $' + str(round(commission, 2))
 		results_lbls['cust_lbl']['text'] = 'Customers Helped: ' + str(n_custs)
 		results_lbls['sales_lbl']['text'] = 'Total Sales: $' + str(round(sales_total, 2))
 		results_lbls['overall_rate_lbl']['text'] = 'Commission Rate: ' + (str(round(commission / sales_total * 100, 2)) if sales_total else '0') + '%' # Handles divide by 0 error
+
+		returns_lbls['count']['text'] = f'Returns Count: {stats.returns_count}'
+		returns_lbls['total']['text'] = f'Returns Total: ${returns_total}'
+		returns_lbls['commission']['text']  = f'Returns Commission Lost: ${round(returns_commission_lost, 2)}'
 
 		# Update breakdown table
 		# Commission row
@@ -147,11 +163,12 @@ def update_results(text_in, deductions_ents, results_lbls, bucket_breakdown_tbl,
 	except Exception as e:
 		print_exception(e)
 
-def clear(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats):
+def clear(transactions_txt, deductions_ents, results_lbls, returns_lbls, bucket_breakdown_tbl, stats):
 	try:
 		transactions_txt.delete('1.0', 'end')
 		for ent in deductions_ents: ent.delete(0, 'end')
 		for lbl in results_lbls.values(): lbl['text'] = ''
+		for lbl in returns_lbls.values(): lbl['text'] = ''
 
 		# TODO: clear table
 		for r in range(1, len(BUCKET_BREAKDOWN_ROWS)+1): bucket_breakdown_tbl.set(f'row', (r,1), *[''] * len(BUCKET_BREAKDOWN_COLS))
@@ -220,13 +237,29 @@ if __name__ == '__main__':
 		deductions_ents[i] = ent
 
 	# Build results section
-	results_frame = tk.Frame()
+	result_lbls_frame = tk.Frame()
+
+	results_frame = tk.Frame(master=result_lbls_frame)
 	results_lbls = {}
 
 	results_lbls['commission_lbl'] = tk.Label(master=results_frame)
 	results_lbls['cust_lbl'] = tk.Label(master=results_frame)
 	results_lbls['sales_lbl'] = tk.Label(master=results_frame)
 	results_lbls['overall_rate_lbl'] = tk.Label(master=results_frame)
+	
+	for lbl in results_lbls.values(): lbl.pack()
+	results_frame.pack(side=tk.LEFT, padx=20)
+
+	# Build returns section
+	returns_frame = tk.Frame(master=result_lbls_frame)
+	returns_lbls = {}
+
+	returns_lbls['count'] = tk.Label(master=returns_frame)
+	returns_lbls['total'] = tk.Label(master=returns_frame)
+	returns_lbls['commission'] = tk.Label(master=returns_frame)
+	
+	for lbl in returns_lbls.values(): lbl.pack()
+	returns_frame.pack(side=tk.LEFT, padx=20)
 
 	# Creating results table broken down by bucket
 	bucket_breakdown_tbl = Table(master=window, ncols=len(BUCKET_BREAKDOWN_COLS)+1, nrows=len(BUCKET_BREAKDOWN_ROWS)+1, colwidth=12)
@@ -236,16 +269,14 @@ if __name__ == '__main__':
 
 	bucket_breakdown_tbl.set_colours('row', (0,1), 'white', 'grey')
 	bucket_breakdown_tbl.set_colours('col', (1,0), 'white', 'grey')
-	
-	for lbl in results_lbls.values(): lbl.pack()
 
 	# Results should be saved and added together between process clicks until cleared
 	bucket_totals = [0,0,0]
 	
 	btn_frame = tk.Frame(master=window)
 	paste_page_btn = tk.Button(text='Paste New Page', master=btn_frame, command=lambda: paste_page(transactions_txt, window))
-	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_results(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats))
-	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, results_lbls, bucket_breakdown_tbl, stats))
+	proc_btn = tk.Button(text='Process', master=btn_frame, command=lambda: update_results(transactions_txt, deductions_ents, results_lbls, returns_lbls, bucket_breakdown_tbl, stats))
+	clear_btn = tk.Button(text='Clear', master=btn_frame, command=lambda: clear(transactions_txt, deductions_ents, results_lbls, returns_lbls, bucket_breakdown_tbl, stats))
 
 	paste_page_btn.pack(side=tk.LEFT)
 	proc_btn.pack(side=tk.LEFT)
@@ -258,7 +289,7 @@ if __name__ == '__main__':
 	deductions_frame.pack()
 
 	btn_frame.pack()
-	results_frame.pack()
+	result_lbls_frame.pack()
 	bucket_breakdown_tbl.pack()
 
 	# Start running app
